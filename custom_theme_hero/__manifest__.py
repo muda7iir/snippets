@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Custom Corporate Hero Snippet',
-    'version': '1.1.0',
+    'version': '1.1.1',
     'category': 'Website',
-    'summary': 'Hero blocks and 10 animated process card snippets with sidebar options.',
+    'summary': 'Hero blocks and 10 animated process card snippets.',
     'author': 'Custom Development',
     'license': 'LGPL-3',
     'depends': ['website'],
     'data': [
         'views/snippets.xml',
         'views/process_cards.xml',
-        'views/snippet_options.xml',
     ],
     'assets': {
         'web.assets_frontend': [
