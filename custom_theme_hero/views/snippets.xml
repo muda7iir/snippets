@@ -21,11 +21,6 @@
 </div></div></div></section>
 </template>
 
-<template id="snippet_hero_menu" inherit_id="website.snippets" name="All Custom Snippets Menu">
-<xpath expr="//snippets[@id='snippet_structure']" position="inside">
-<t t-snippet="custom_theme_hero.s_custom_hero" string="Custom Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_thumb.svg"/>
-<t t-snippet="custom_theme_hero.s_custom_hero_animated" string="Animated Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_animated_thumb.svg"/>
-</xpath>
-</template>
+<!-- Registration moved to process_cards.xml under custom "Snippets" category -->
 
 </odoo>
