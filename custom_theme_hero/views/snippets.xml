@@ -119,15 +119,4 @@
         </xpath>
     </template>
 
-    <!-- =============================================
-         Load the animated CSS on the frontend
-         ============================================= -->
-    <template id="assets_frontend" inherit_id="website.assets_frontend"
-              name="Custom Hero Animated Assets">
-        <xpath expr="." position="inside">
-            <link rel="stylesheet"
-                  href="/custom_theme_hero/static/src/css/s_custom_hero_animated.css"/>
-        </xpath>
-    </template>
-
 </odoo>
