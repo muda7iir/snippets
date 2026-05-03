@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Snippet HTML structure -->
+    <!-- =============================================
+         SNIPPET 1: Custom Corporate Hero (Original)
+         ============================================= -->
     <template id="s_custom_hero" name="Custom Corporate Hero">
         <section class="s_custom_hero pt128 pb128 o_cc o_cc1 o_colored_level"
                  data-snippet="s_custom_hero"
@@ -38,20 +40,101 @@
         </section>
     </template>
 
-    <!-- Register at the TOP of the Intro panel -->
+    <!-- =============================================
+         SNIPPET 2: Animated Corporate Hero (New)
+         Colors: #1673CA (Blue) / #808080 (Gray)
+         ============================================= -->
+    <template id="s_custom_hero_animated" name="Animated Corporate Hero">
+        <section class="s_custom_hero_animated o_colored_level"
+                 data-snippet="s_custom_hero_animated"
+                 data-name="Animated Corporate Hero"
+                 style="padding: 120px 0;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 text-center">
+
+                        <!-- Animated badge -->
+                        <div class="mb-4">
+                            <span class="s_hero_badge">
+                                <span class="s_hero_badge_dot"/>
+                                Enterprise Solutions — Built for Scale
+                            </span>
+                        </div>
+
+                        <!-- Animated heading -->
+                        <h1 class="display-2 fw-bold text-white mb-4"
+                            style="line-height: 1.1; letter-spacing: -1px;">
+                            Transform Your
+                            <span style="background: linear-gradient(135deg, #1673CA, #5ba3e0);
+                                         -webkit-background-clip: text;
+                                         -webkit-text-fill-color: transparent;
+                                         background-clip: text;">
+                                Business Operations
+                            </span>
+                            with Smart Technology
+                        </h1>
+
+                        <!-- Animated divider -->
+                        <div class="d-flex justify-content-center mb-4">
+                            <hr class="s_hero_divider"/>
+                        </div>
+
+                        <!-- Animated subtitle -->
+                        <p class="lead text-white mb-5"
+                           style="opacity: 0.75; font-size: 1.2rem; max-width: 650px; margin: 0 auto;">
+                            From membership management to project tracking — empower your
+                            organization with integrated digital workflows that drive
+                            efficiency and growth.
+                        </p>
+
+                        <!-- Animated buttons -->
+                        <div class="s_hero_buttons d-inline-flex flex-wrap justify-content-center gap-3">
+                            <a href="#" class="btn btn-hero-primary">
+                                Start Free Trial
+                            </a>
+                            <a href="#" class="btn btn-hero-secondary">
+                                Watch Demo
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- =============================================
+         Register both snippets in the builder
+         ============================================= -->
     <template id="snippet_hero_menu"
               inherit_id="website.snippets"
-              name="Custom Corporate Hero - Snippet Menu">
-        <!-- Target both possible IDs to ensure it shows up in Odoo 19 -->
+              name="Custom Hero Snippets - Menu">
         <xpath expr="//snippets[@id='snippet_intro']" position="inside">
             <t t-snippet="custom_theme_hero.s_custom_hero"
                string="Custom Corporate Hero"
                t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_thumb.svg"/>
+            <t t-snippet="custom_theme_hero.s_custom_hero_animated"
+               string="Animated Corporate Hero"
+               t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_animated_thumb.svg"/>
         </xpath>
         <xpath expr="//snippets[@id='snippet_structure']" position="inside">
             <t t-snippet="custom_theme_hero.s_custom_hero"
                string="Custom Corporate Hero"
                t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_thumb.svg"/>
+            <t t-snippet="custom_theme_hero.s_custom_hero_animated"
+               string="Animated Corporate Hero"
+               t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_animated_thumb.svg"/>
+        </xpath>
+    </template>
+
+    <!-- =============================================
+         Load the animated CSS on the frontend
+         ============================================= -->
+    <template id="assets_frontend" inherit_id="website.assets_frontend"
+              name="Custom Hero Animated Assets">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet"
+                  href="/custom_theme_hero/static/src/css/s_custom_hero_animated.css"/>
         </xpath>
     </template>
 
