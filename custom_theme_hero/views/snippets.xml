@@ -1,122 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- =============================================
-         SNIPPET 1: Custom Corporate Hero (Original)
-         ============================================= -->
-    <template id="s_custom_hero" name="Custom Corporate Hero">
-        <section class="s_custom_hero pt128 pb128 o_cc o_cc1 o_colored_level"
-                 data-snippet="s_custom_hero"
-                 data-name="Custom Corporate Hero"
-                 style="background-image: url('/web/image/website.s_banner_default_image');
-                        background-size: cover;
-                        background-position: center center;
-                        background-repeat: no-repeat;">
-            <div class="o_we_bg_filter bg-black-50"/>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h1 class="display-3 fw-bold text-white mb-3"
-                            style="text-shadow: 0 2px 8px rgba(0,0,0,0.35);">
-                            The Ultimate Business OS for Your Enterprise
-                        </h1>
-                        <p class="lead text-white o_default_snippet_text mb-4"
-                           style="opacity: 0.9;">
-                            Streamline operations, automate workflows, and scale smarter
-                            with our comprehensive SME Starter Packs. Seamlessly integrate
-                            all your core modules into one dynamic platform.
-                        </p>
-                        <div class="s_btn d-inline-flex flex-wrap justify-content-center gap-2 mt-3">
-                            <a href="#" class="btn btn-primary btn-lg rounded-pill px-5 py-3">
-                                Get Started
-                            </a>
-                            <a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">
-                                Explore Starter Packs
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </template>
+<template id="s_custom_hero" name="Custom Corporate Hero">
+<section class="s_custom_hero pt128 pb128 o_cc o_cc1 o_colored_level" data-snippet="s_custom_hero" data-name="Custom Corporate Hero" style="background-image:url('/web/image/website.s_banner_default_image');background-size:cover;background-position:center center;background-repeat:no-repeat;">
+<div class="o_we_bg_filter bg-black-50"/><div class="container"><div class="row justify-content-center"><div class="col-lg-8 text-center">
+<h1 class="display-3 fw-bold text-white mb-3" style="text-shadow:0 2px 8px rgba(0,0,0,0.35)">The Ultimate Business OS for Your Enterprise</h1>
+<p class="lead text-white o_default_snippet_text mb-4" style="opacity:0.9">Streamline operations, automate workflows, and scale smarter with our comprehensive SME Starter Packs.</p>
+<div class="s_btn d-inline-flex flex-wrap justify-content-center gap-2 mt-3"><a href="#" class="btn btn-primary btn-lg rounded-pill px-5 py-3">Get Started</a><a href="#" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">Explore Starter Packs</a></div>
+</div></div></div></section>
+</template>
 
-    <!-- =============================================
-         SNIPPET 2: Animated Corporate Hero (New)
-         Colors: #1673CA (Blue) / #808080 (Gray)
-         ============================================= -->
-    <template id="s_custom_hero_animated" name="Animated Corporate Hero">
-        <section class="s_custom_hero_animated o_colored_level"
-                 data-snippet="s_custom_hero_animated"
-                 data-name="Animated Corporate Hero"
-                 style="padding: 120px 0;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 text-center">
+<template id="s_custom_hero_animated" name="Animated Corporate Hero">
+<section class="s_custom_hero_animated o_colored_level" data-snippet="s_custom_hero_animated" data-name="Animated Corporate Hero" style="padding:120px 0">
+<div class="container"><div class="row justify-content-center"><div class="col-lg-9 text-center">
+<div class="mb-4"><span class="s_hero_badge"><span class="s_hero_badge_dot"/>Enterprise Solutions — Built for Scale</span></div>
+<h1 class="display-2 fw-bold text-white mb-4" style="line-height:1.1;letter-spacing:-1px">Transform Your <span style="background:linear-gradient(135deg,#1673CA,#5ba3e0);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Business Operations</span> with Smart Technology</h1>
+<div class="d-flex justify-content-center mb-4"><hr class="s_hero_divider"/></div>
+<p class="lead text-white mb-5" style="opacity:0.75;font-size:1.2rem;max-width:650px;margin:0 auto">From membership management to project tracking — empower your organization with integrated digital workflows.</p>
+<div class="s_hero_buttons d-inline-flex flex-wrap justify-content-center gap-3"><a href="#" class="btn btn-hero-primary">Start Free Trial</a><a href="#" class="btn btn-hero-secondary">Watch Demo</a></div>
+</div></div></div></section>
+</template>
 
-                        <!-- Animated badge -->
-                        <div class="mb-4">
-                            <span class="s_hero_badge">
-                                <span class="s_hero_badge_dot"/>
-                                Enterprise Solutions — Built for Scale
-                            </span>
-                        </div>
-
-                        <!-- Animated heading -->
-                        <h1 class="display-2 fw-bold text-white mb-4"
-                            style="line-height: 1.1; letter-spacing: -1px;">
-                            Transform Your
-                            <span style="background: linear-gradient(135deg, #1673CA, #5ba3e0);
-                                         -webkit-background-clip: text;
-                                         -webkit-text-fill-color: transparent;
-                                         background-clip: text;">
-                                Business Operations
-                            </span>
-                            with Smart Technology
-                        </h1>
-
-                        <!-- Animated divider -->
-                        <div class="d-flex justify-content-center mb-4">
-                            <hr class="s_hero_divider"/>
-                        </div>
-
-                        <!-- Animated subtitle -->
-                        <p class="lead text-white mb-5"
-                           style="opacity: 0.75; font-size: 1.2rem; max-width: 650px; margin: 0 auto;">
-                            From membership management to project tracking — empower your
-                            organization with integrated digital workflows that drive
-                            efficiency and growth.
-                        </p>
-
-                        <!-- Animated buttons -->
-                        <div class="s_hero_buttons d-inline-flex flex-wrap justify-content-center gap-3">
-                            <a href="#" class="btn btn-hero-primary">
-                                Start Free Trial
-                            </a>
-                            <a href="#" class="btn btn-hero-secondary">
-                                Watch Demo
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-    </template>
-
-    <!-- =============================================
-         Register both snippets in the Structure panel
-         ============================================= -->
-    <template id="snippet_hero_menu"
-              inherit_id="website.snippets"
-              name="Custom Hero Snippets - Menu">
-        <xpath expr="//snippets[@id='snippet_structure']" position="inside">
-            <t t-snippet="custom_theme_hero.s_custom_hero"
-               string="Custom Corporate Hero"
-               t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_thumb.svg"/>
-            <t t-snippet="custom_theme_hero.s_custom_hero_animated"
-               string="Animated Corporate Hero"
-               t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_animated_thumb.svg"/>
-        </xpath>
-    </template>
+<template id="snippet_hero_menu" inherit_id="website.snippets" name="All Custom Snippets Menu">
+<xpath expr="//snippets[@id='snippet_structure']" position="inside">
+<t t-snippet="custom_theme_hero.s_custom_hero" string="Custom Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_custom_hero_animated" string="Animated Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_animated_thumb.svg"/>
+</xpath>
+</template>
 
 </odoo>
