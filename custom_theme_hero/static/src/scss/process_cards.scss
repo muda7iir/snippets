@@ -1,144 +1,111 @@
-/* =========================================
-   Process Cards – 10 Animated Variants
-   ========================================= */
+/* === CSS Variable Controllers === */
+.s_card_glow_blue { --card-glow: rgba(22,115,202,0.4); }
+.s_card_glow_teal { --card-glow: rgba(13,148,136,0.4); }
+.s_card_glow_purple { --card-glow: rgba(124,58,237,0.4); }
+.s_card_glow_amber { --card-glow: rgba(245,158,11,0.4); }
+.s_card_glow_rose { --card-glow: rgba(225,29,72,0.4); }
+.s_card_shadow_none { --card-shadow: none; }
+.s_card_shadow_sm { --card-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.s_card_shadow_md { --card-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.s_card_shadow_lg { --card-shadow: 0 16px 48px rgba(0,0,0,0.15); }
+.s_card_shadow_xl { --card-shadow: 0 24px 64px rgba(0,0,0,0.2); }
+.s_card_radius_none { --card-radius: 0; }
+.s_card_radius_sm { --card-radius: 6px; }
+.s_card_radius_md { --card-radius: 12px; }
+.s_card_radius_lg { --card-radius: 24px; }
 
-/* --- 1. Classic Lift --- */
+/* === 1. Classic Lift === */
 .s_process_card_1 .s_card_item {
+  border-radius: var(--card-radius, 12px);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;
-  }
-  .s_card_icon_wrap {
-    width: 80px; height: 80px;
-    transition: background-color 0.35s ease, color 0.35s ease;
-  }
-  &:hover .s_card_icon_wrap {
-    background-color: var(--o-color-1, var(--bs-primary)) !important;
-    color: #fff !important;
-    i { color: #fff !important; }
-  }
+  &:hover { transform: translateY(-10px); box-shadow: var(--card-shadow, 0 16px 40px rgba(0,0,0,0.12)); }
+  .s_card_icon_wrap { transition: background-color 0.35s ease; }
+  &:hover .s_card_icon_wrap { background-color: var(--bs-primary) !important; }
+  &:hover .s_card_icon_wrap i { color: #fff !important; }
 }
 
-/* --- 2. Minimalist Outline --- */
+/* === 2. Minimalist Outline === */
 .s_process_card_2 .s_card_item {
-  border: 2px solid rgba(128,128,128,0.25);
-  background: transparent;
+  border: 2px solid rgba(128,128,128,0.25); background: transparent;
+  border-radius: var(--card-radius, 12px);
   transition: background-color 0.4s ease, border-color 0.4s ease, transform 0.4s ease;
-  &:hover {
-    background-color: rgba(var(--bs-primary-rgb, 22,115,202), 0.08);
-    border-color: var(--o-color-1, var(--bs-primary));
-    transform: scale(1.03);
-  }
+  &:hover { background-color: rgba(var(--bs-primary-rgb,22,115,202),0.08); border-color: var(--bs-primary); transform: scale(1.03); }
 }
 
-/* --- 3. Left-Aligned Slide --- */
+/* === 3. Left-Aligned Slide === */
 .s_process_card_3 .s_card_item {
-  .s_card_icon_wrap {
-    width: 64px; height: 64px; min-width: 64px;
-    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1);
-  }
-  &::before {
-    content: ''; position: absolute; inset: 0; border-radius: inherit;
-    background: radial-gradient(circle at 0% 50%, rgba(var(--bs-primary-rgb,22,115,202),0.06), transparent 70%);
-    opacity: 0; transition: opacity 0.4s ease;
-  }
+  border-radius: var(--card-radius, 12px);
+  .s_card_icon_wrap { transition: transform 0.4s cubic-bezier(0.22,1,0.36,1); }
   &:hover .s_card_icon_wrap { transform: translateX(8px); }
+  &::before { content:''; position:absolute; inset:0; border-radius:inherit;
+    background: radial-gradient(circle at 0% 50%, rgba(var(--bs-primary-rgb,22,115,202),0.06), transparent 70%);
+    opacity:0; transition: opacity 0.4s ease; }
   &:hover::before { opacity: 1; }
 }
 
-/* --- 4. Glassmorphism --- */
-.s_process_card_4 {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  .s_card_item {
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.12);
-    transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
-    &:hover {
-      background: rgba(255,255,255,0.15);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-      transform: translateY(-6px);
-    }
-  }
+/* === 4. Glassmorphism === */
+.s_process_card_4 .s_card_item {
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.12); border-radius: var(--card-radius, 12px);
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  &:hover { background: rgba(255,255,255,0.15); box-shadow: 0 12px 40px rgba(0,0,0,0.3); transform: translateY(-6px); }
 }
 
-/* --- 5. Neumorphism --- */
-.s_process_card_5 {
-  .s_card_item {
-    background: #e8edf2;
-    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.08), inset -4px -4px 8px rgba(255,255,255,0.8);
-    transition: box-shadow 0.4s ease, transform 0.3s ease;
-    &:hover {
-      box-shadow: 6px 6px 16px rgba(0,0,0,0.12), -6px -6px 16px rgba(255,255,255,0.9);
-      transform: translateY(-4px);
-    }
-  }
+/* === 5. Neumorphism === */
+.s_process_card_5 .s_card_item {
+  background: #e8edf2; border-radius: var(--card-radius, 12px);
+  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.08), inset -4px -4px 8px rgba(255,255,255,0.8);
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+  &:hover { box-shadow: 6px 6px 16px rgba(0,0,0,0.12), -6px -6px 16px rgba(255,255,255,0.9); transform: translateY(-4px); }
 }
 
-/* --- 6. Bottom Border Reveal --- */
+/* === 6. Bottom Border Reveal === */
 .s_process_card_6 .s_card_item {
-  position: relative; overflow: hidden;
+  position: relative; overflow: hidden; border-radius: var(--card-radius, 12px);
   transition: transform 0.3s ease;
-  &::after {
-    content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 4px;
-    background: var(--o-color-1, var(--bs-primary));
-    transform: scaleX(0); transform-origin: left;
-    transition: transform 0.5s cubic-bezier(0.22,1,0.36,1);
-  }
+  &::after { content:''; position:absolute; bottom:0; left:0; width:100%; height:4px;
+    background: var(--card-glow, var(--bs-primary)); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.22,1,0.36,1); }
   &:hover { transform: translateY(-4px); }
   &:hover::after { transform: scaleX(1); }
 }
 
-/* --- 7. Floating Badge --- */
+/* === 7. Floating Badge === */
 .s_process_card_7 {
   .s_card_col { padding-top: 40px; }
   .s_card_item { position: relative; padding-top: 50px !important;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-  }
-  .s_card_icon_wrap {
-    width: 72px; height: 72px;
-    position: absolute; top: -36px; left: 50%; transform: translateX(-50%);
-    transition: transform 0.4s ease;
-    z-index: 2;
-  }
-  .s_card_item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 35px rgba(0,0,0,0.12) !important;
-  }
+    border-radius: var(--card-radius, 12px);
+    transition: transform 0.35s ease, box-shadow 0.35s ease; }
+  .s_card_icon_wrap { position: absolute; top: -36px; left: 50%; transform: translateX(-50%);
+    transition: transform 0.4s ease; z-index: 2; }
+  .s_card_item:hover { transform: translateY(-8px); box-shadow: var(--card-shadow, 0 12px 35px rgba(0,0,0,0.12)); }
   .s_card_item:hover .s_card_icon_wrap { transform: translateX(-50%) rotate(15deg); }
 }
 
-/* --- 8. Dark Mode Elegance --- */
+/* === 8. Dark Mode Elegance === */
 .s_process_card_8 .s_card_item {
+  border-radius: var(--card-radius, 12px);
   transition: box-shadow 0.4s ease, transform 0.3s ease;
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 20px rgba(var(--bs-primary-rgb,22,115,202),0.4),
-                0 0 60px rgba(var(--bs-primary-rgb,22,115,202),0.15) !important;
-  }
+  &:hover { transform: translateY(-6px);
+    box-shadow: 0 0 20px var(--card-glow, rgba(22,115,202,0.4)), 0 0 60px var(--card-glow, rgba(22,115,202,0.15)) !important; }
 }
 
-/* --- 9. Color Flip --- */
+/* === 9. Color Flip === */
 .s_process_card_9 .s_card_item {
+  border-radius: var(--card-radius, 12px);
   transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  &:hover {
-    background-color: #fff !important;
-    color: var(--o-color-1, var(--bs-primary)) !important;
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-    h4, p, .s_step_num { color: inherit !important; }
-    i { color: var(--o-color-1, var(--bs-primary)) !important; }
-  }
+  &:hover { background-color: #fff !important; color: var(--bs-primary) !important;
+    transform: translateY(-6px); box-shadow: var(--card-shadow, 0 12px 30px rgba(0,0,0,0.12)); }
+  &:hover h4, &:hover p, &:hover span { color: inherit !important; }
+  &:hover i { color: var(--bs-primary) !important; }
 }
 
-/* --- 10. Content Slide --- */
+/* === 10. Content Slide === */
 .s_process_card_10 .s_card_item {
-  .s_card_body {
-    max-height: 0; overflow: hidden; opacity: 0;
-    transition: max-height 0.5s cubic-bezier(0.22,1,0.36,1), opacity 0.4s ease 0.1s;
-  }
-  &:hover .s_card_body { max-height: 120px; opacity: 1; }
-  &:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.1) !important; }
+  border-radius: var(--card-radius, 12px);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+  .s_card_body { max-height: 0; overflow: hidden; opacity: 0;
+    transition: max-height 0.5s cubic-bezier(0.22,1,0.36,1), opacity 0.4s ease 0.1s; }
+  &:hover .s_card_body { max-height: 120px; opacity: 1; }
+  &:hover { transform: translateY(-6px); box-shadow: var(--card-shadow, 0 12px 30px rgba(0,0,0,0.1)); }
 }

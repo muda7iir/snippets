@@ -1,21 +1,16 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Custom Corporate Hero Snippet',
-    'version': '1.0.2',
+    'version': '1.1.0',
     'category': 'Website',
-    'summary': 'Adds hero blocks and process cards to the website builder.',
-    'description': """
-Custom Corporate Snippets
-=========================
-Hero sections and 10 animated process card variants
-for the Odoo Website Builder.
-    """,
+    'summary': 'Hero blocks and 10 animated process card snippets with sidebar options.',
     'author': 'Custom Development',
     'license': 'LGPL-3',
     'depends': ['website'],
     'data': [
         'views/snippets.xml',
         'views/process_cards.xml',
+        'views/snippet_options.xml',
     ],
     'assets': {
         'web.assets_frontend': [
