@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- 1. Classic Lift -->
+<template id="s_process_card_1" name="Process Cards – Classic Lift">
+<section class="s_process_card_1 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_1" data-name="Process Cards – Classic Lift" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">How It Works</h2><p class="lead o_default_snippet_text">Follow our proven process to achieve outstanding results.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto mb-3 rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center"><i class="fa fa-lightbulb-o fa-2x text-primary"/></div><h4 class="fw-semibold mb-2">Discovery</h4><p class="mb-0 o_default_snippet_text small">We analyse your requirements and define the project scope.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto mb-3 rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center"><i class="fa fa-pencil fa-2x text-primary"/></div><h4 class="fw-semibold mb-2">Planning</h4><p class="mb-0 o_default_snippet_text small">Strategic roadmap crafted to meet your business goals.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto mb-3 rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center"><i class="fa fa-cogs fa-2x text-primary"/></div><h4 class="fw-semibold mb-2">Execution</h4><p class="mb-0 o_default_snippet_text small">Expert implementation with rigorous quality controls.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto mb-3 rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center"><i class="fa fa-rocket fa-2x text-primary"/></div><h4 class="fw-semibold mb-2">Launch</h4><p class="mb-0 o_default_snippet_text small">Go live with confidence and ongoing support.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 2. Minimalist Outline -->
+<template id="s_process_card_2" name="Process Cards – Minimalist Outline">
+<section class="s_process_card_2 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_2" data-name="Process Cards – Minimalist Outline" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">Our Approach</h2><p class="lead o_default_snippet_text">Clean, efficient steps that deliver measurable outcomes.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><span class="d-block fw-bold mb-2 text-primary" style="font-size:2rem">01</span><h4 class="fw-semibold mb-2">Research</h4><p class="mb-0 o_default_snippet_text small">Deep dive into your market and operational landscape.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><span class="d-block fw-bold mb-2 text-primary" style="font-size:2rem">02</span><h4 class="fw-semibold mb-2">Design</h4><p class="mb-0 o_default_snippet_text small">Blueprint solutions tailored to your unique challenges.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><span class="d-block fw-bold mb-2 text-primary" style="font-size:2rem">03</span><h4 class="fw-semibold mb-2">Develop</h4><p class="mb-0 o_default_snippet_text small">Build with precision using industry best practices.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><span class="d-block fw-bold mb-2 text-primary" style="font-size:2rem">04</span><h4 class="fw-semibold mb-2">Deliver</h4><p class="mb-0 o_default_snippet_text small">Deploy and optimise for maximum business impact.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 3. Left-Aligned Slide -->
+<template id="s_process_card_3" name="Process Cards – Left-Aligned Slide">
+<section class="s_process_card_3 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_3" data-name="Process Cards – Left-Aligned Slide" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">Step by Step</h2><p class="lead o_default_snippet_text">A guided journey from concept to completion.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-6"><div class="s_card_item d-flex align-items-start p-4 rounded-3 shadow-sm position-relative"><div class="s_card_icon_wrap rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3 flex-shrink-0"><i class="fa fa-search fa-lg text-primary"/></div><div><h4 class="fw-semibold mb-1">Analyse</h4><p class="mb-0 o_default_snippet_text small">Understand your current systems and identify opportunities.</p></div></div></div>
+<div class="col-lg-6"><div class="s_card_item d-flex align-items-start p-4 rounded-3 shadow-sm position-relative"><div class="s_card_icon_wrap rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3 flex-shrink-0"><i class="fa fa-sitemap fa-lg text-primary"/></div><div><h4 class="fw-semibold mb-1">Architect</h4><p class="mb-0 o_default_snippet_text small">Design scalable solutions aligned with your vision.</p></div></div></div>
+<div class="col-lg-6"><div class="s_card_item d-flex align-items-start p-4 rounded-3 shadow-sm position-relative"><div class="s_card_icon_wrap rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3 flex-shrink-0"><i class="fa fa-code fa-lg text-primary"/></div><div><h4 class="fw-semibold mb-1">Implement</h4><p class="mb-0 o_default_snippet_text small">Build and integrate with meticulous attention to detail.</p></div></div></div>
+<div class="col-lg-6"><div class="s_card_item d-flex align-items-start p-4 rounded-3 shadow-sm position-relative"><div class="s_card_icon_wrap rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3 flex-shrink-0"><i class="fa fa-line-chart fa-lg text-primary"/></div><div><h4 class="fw-semibold mb-1">Optimise</h4><p class="mb-0 o_default_snippet_text small">Monitor performance and continuously improve results.</p></div></div></div>
+</div></div></section>
+</template>
+
+<!-- 4. Glassmorphism -->
+<template id="s_process_card_4" name="Process Cards – Glassmorphism">
+<section class="s_process_card_4" data-snippet="s_process_card_4" data-name="Process Cards – Glassmorphism" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold text-white mb-3">Our Workflow</h2><p class="lead text-white o_default_snippet_text" style="opacity:0.8">Transparent processes with clear visibility at every stage.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-compass fa-2x text-white mb-3"/><h4 class="fw-semibold text-white mb-2">Navigate</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.8">Chart the optimal course for your project.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-puzzle-piece fa-2x text-white mb-3"/><h4 class="fw-semibold text-white mb-2">Assemble</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.8">Piece together the right components and teams.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-flask fa-2x text-white mb-3"/><h4 class="fw-semibold text-white mb-2">Refine</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.8">Test and iterate until perfection is achieved.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-trophy fa-2x text-white mb-3"/><h4 class="fw-semibold text-white mb-2">Succeed</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.8">Celebrate results and plan for continued growth.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 5. Neumorphism -->
+<template id="s_process_card_5" name="Process Cards – Neumorphism">
+<section class="s_process_card_5 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_5" data-name="Process Cards – Neumorphism" style="padding:80px 0;background:#e8edf2">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">The Journey</h2><p class="lead o_default_snippet_text">Smooth transitions from one milestone to the next.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-map-marker fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Origin</h4><p class="mb-0 o_default_snippet_text small">Define the starting point and set clear objectives.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-road fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Path</h4><p class="mb-0 o_default_snippet_text small">Map the route with achievable milestones.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-wrench fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Build</h4><p class="mb-0 o_default_snippet_text small">Construct with robust tools and expert guidance.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3"><i class="fa fa-flag-checkered fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Finish</h4><p class="mb-0 o_default_snippet_text small">Cross the finish line with measurable success.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 6. Bottom Border Reveal -->
+<template id="s_process_card_6" name="Process Cards – Bottom Border Reveal">
+<section class="s_process_card_6 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_6" data-name="Process Cards – Bottom Border Reveal" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">Our Method</h2><p class="lead o_default_snippet_text">Precision-driven steps that consistently deliver value.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-eye fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Observe</h4><p class="mb-0 o_default_snippet_text small">Identify patterns, gaps, and opportunities.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-list-ol fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Prioritise</h4><p class="mb-0 o_default_snippet_text small">Rank initiatives by impact and feasibility.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-play-circle fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Execute</h4><p class="mb-0 o_default_snippet_text small">Deliver with speed, quality, and accountability.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-refresh fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Iterate</h4><p class="mb-0 o_default_snippet_text small">Learn from data and continuously improve.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 7. Floating Badge -->
+<template id="s_process_card_7" name="Process Cards – Floating Badge">
+<section class="s_process_card_7 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_7" data-name="Process Cards – Floating Badge" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">Key Phases</h2><p class="lead o_default_snippet_text">Each phase builds on the last to create lasting value.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6 s_card_col"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto rounded-circle bg-primary d-flex align-items-center justify-content-center"><i class="fa fa-comments fa-lg text-white"/></div><h4 class="fw-semibold mb-2">Consult</h4><p class="mb-0 o_default_snippet_text small">Engage stakeholders and gather requirements.</p></div></div>
+<div class="col-lg-3 col-md-6 s_card_col"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto rounded-circle bg-primary d-flex align-items-center justify-content-center"><i class="fa fa-paint-brush fa-lg text-white"/></div><h4 class="fw-semibold mb-2">Create</h4><p class="mb-0 o_default_snippet_text small">Design intuitive and impactful solutions.</p></div></div>
+<div class="col-lg-3 col-md-6 s_card_col"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto rounded-circle bg-primary d-flex align-items-center justify-content-center"><i class="fa fa-check-square-o fa-lg text-white"/></div><h4 class="fw-semibold mb-2">Validate</h4><p class="mb-0 o_default_snippet_text small">Test rigorously to ensure flawless delivery.</p></div></div>
+<div class="col-lg-3 col-md-6 s_card_col"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><div class="s_card_icon_wrap mx-auto rounded-circle bg-primary d-flex align-items-center justify-content-center"><i class="fa fa-handshake-o fa-lg text-white"/></div><h4 class="fw-semibold mb-2">Partner</h4><p class="mb-0 o_default_snippet_text small">Ongoing collaboration for sustained success.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 8. Dark Mode Elegance -->
+<template id="s_process_card_8" name="Process Cards – Dark Mode Elegance">
+<section class="s_process_card_8 bg-dark" data-snippet="s_process_card_8" data-name="Process Cards – Dark Mode Elegance" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold text-white mb-3">The Framework</h2><p class="lead text-white o_default_snippet_text" style="opacity:0.7">Engineered for performance at enterprise scale.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3" style="background:rgba(255,255,255,0.06)"><i class="fa fa-database fa-2x text-primary mb-3"/><h4 class="fw-semibold text-white mb-2">Aggregate</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.7">Centralise data from all your key sources.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3" style="background:rgba(255,255,255,0.06)"><i class="fa fa-filter fa-2x text-primary mb-3"/><h4 class="fw-semibold text-white mb-2">Process</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.7">Transform raw data into actionable intelligence.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3" style="background:rgba(255,255,255,0.06)"><i class="fa fa-bolt fa-2x text-primary mb-3"/><h4 class="fw-semibold text-white mb-2">Automate</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.7">Streamline repetitive workflows effortlessly.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3" style="background:rgba(255,255,255,0.06)"><i class="fa fa-bar-chart fa-2x text-primary mb-3"/><h4 class="fw-semibold text-white mb-2">Measure</h4><p class="mb-0 text-white o_default_snippet_text small" style="opacity:0.7">Track KPIs and drive data-informed decisions.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 9. Color Flip -->
+<template id="s_process_card_9" name="Process Cards – Color Flip">
+<section class="s_process_card_9 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_9" data-name="Process Cards – Color Flip" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">Our Pillars</h2><p class="lead o_default_snippet_text">Core principles that guide every project we undertake.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 bg-primary text-white"><i class="fa fa-shield fa-2x mb-3"/><h4 class="fw-semibold mb-2">Trust</h4><p class="mb-0 o_default_snippet_text small">Built on transparency and honest communication.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 bg-primary text-white"><i class="fa fa-diamond fa-2x mb-3"/><h4 class="fw-semibold mb-2">Quality</h4><p class="mb-0 o_default_snippet_text small">Excellence in every detail, every deliverable.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 bg-primary text-white"><i class="fa fa-users fa-2x mb-3"/><h4 class="fw-semibold mb-2">Teamwork</h4><p class="mb-0 o_default_snippet_text small">Collaboration that amplifies collective strengths.</p></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 bg-primary text-white"><i class="fa fa-leaf fa-2x mb-3"/><h4 class="fw-semibold mb-2">Growth</h4><p class="mb-0 o_default_snippet_text small">Sustainable strategies for long-term prosperity.</p></div></div>
+</div></div></section>
+</template>
+
+<!-- 10. Content Slide -->
+<template id="s_process_card_10" name="Process Cards – Content Slide">
+<section class="s_process_card_10 o_cc o_cc1 o_colored_level" data-snippet="s_process_card_10" data-name="Process Cards – Content Slide" style="padding:80px 0">
+<div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">Quick Overview</h2><p class="lead o_default_snippet_text">Hover to explore the details of each step.</p></div></div>
+<div class="row g-4">
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-file-text-o fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Brief</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Collect project requirements and define scope.</p></div></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-object-group fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Prototype</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Create interactive mockups for stakeholder review.</p></div></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-terminal fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Develop</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Write clean, tested code following best practices.</p></div></div></div>
+<div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-paper-plane fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Ship</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Deploy to production with zero-downtime releases.</p></div></div></div>
+</div></div></section>
+</template>
+
+<!-- Register all 10 snippets -->
+<template id="snippet_process_cards_menu" inherit_id="website.snippets" name="Process Cards – Snippet Menu">
+<xpath expr="//snippets[@id='snippet_structure']" position="inside">
+<t t-snippet="custom_theme_hero.s_process_card_1" string="Classic Lift Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_2" string="Minimalist Outline Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_3" string="Left-Aligned Slide Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_4" string="Glassmorphism Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_5" string="Neumorphism Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_6" string="Bottom Border Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_7" string="Floating Badge Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_8" string="Dark Mode Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_9" string="Color Flip Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_10" string="Content Slide Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+</xpath>
+</template>
+
+</odoo>
