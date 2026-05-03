@@ -20,21 +20,22 @@
 
 <template id="s_process_card_10" name="Content Slide Cards"><section class="s_process_card_10 o_cc o_cc1 o_colored_level s_card_radius_md s_card_shadow_md" data-snippet="s_process_card_10" data-name="Content Slide Cards" style="padding:80px 0"><div class="container"><div class="row text-center mb-5"><div class="col-lg-8 mx-auto"><h2 class="fw-bold mb-3">Quick Overview</h2><p class="lead o_default_snippet_text">Hover to explore the details of each step.</p></div></div><div class="row g-4"><div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-file-text-o fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Step Title</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Description goes here.</p></div></div></div><div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-object-group fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Step Title</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Description goes here.</p></div></div></div><div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-terminal fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Step Title</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Description goes here.</p></div></div></div><div class="col-lg-3 col-md-6"><div class="s_card_item text-center p-4 rounded-3 shadow-sm"><i class="fa fa-paper-plane fa-2x text-primary mb-3"/><h4 class="fw-semibold mb-2">Step Title</h4><div class="s_card_body"><p class="mb-0 o_default_snippet_text small">Description goes here.</p></div></div></div></div></div></section></template>
 
-<!-- Register all 12 snippets inside the Intro category -->
-<template id="snippet_custom_block" inherit_id="website.snippets" name="Custom Snippets in Intro">
-<xpath expr="//snippets[@id='snippet_groups']/*[1]" position="before">
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_custom_hero" string="Custom Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_custom_hero_animated" string="Animated Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_animated_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_1" string="Classic Lift Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_2" string="Minimalist Outline Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_3" string="Left-Aligned Slide Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_4" string="Glassmorphism Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_5" string="Neumorphism Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_6" string="Bottom Border Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_7" string="Floating Badge Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_8" string="Dark Mode Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_9" string="Color Flip Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
-<t snippet-group="intro" t-snippet="custom_theme_hero.s_process_card_10" string="Content Slide Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<!-- Register all 12 snippets in Structure (proven working for drag-and-drop) -->
+<template id="snippet_custom_block" inherit_id="website.snippets" name="Custom Snippets in Structure">
+<xpath expr="//snippets[@id='snippet_structure']" position="inside">
+<t t-snippet="custom_theme_hero.s_custom_hero" string="Custom Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_custom_hero_animated" string="Animated Corporate Hero" t-thumbnail="/custom_theme_hero/static/src/img/s_custom_hero_animated_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_1" string="Classic Lift Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_2" string="Minimalist Outline Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_3" string="Left-Aligned Slide Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_4" string="Glassmorphism Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_5" string="Neumorphism Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_6" string="Bottom Border Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_7" string="Floating Badge Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_8" string="Dark Mode Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_9" string="Color Flip Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
+<t t-snippet="custom_theme_hero.s_process_card_10" string="Content Slide Cards" t-thumbnail="/custom_theme_hero/static/src/img/s_process_card_thumb.svg"/>
 </xpath>
 </template>
 </odoo>
+
