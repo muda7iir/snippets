@@ -23,7 +23,7 @@ Current snippets:
     ],
     'assets': {
         'web.assets_frontend': [
-            'nx_industry_housing/static/src/scss/nx_industry_housing.scss',
+            'nx_industry_housing/static/src/scss/_nx_president_message.scss',
         ],
     },
     'installable': True,
