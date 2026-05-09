@@ -1,0 +1,253 @@
+<odoo>
+    <template id="nx_properties_listing" name="NX Properties Listing">
+        <t t-call="website.layout">
+            <section class="nx-properties-hero nx-section-xl">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <p class="nx-label text-uppercase">NX Housing</p>
+                            <h1 class="nx-heading-display">Find Your Perfect Property</h1>
+                            <p class="nx-subheading">Explore our curated collection of premium properties with full transparency and expert support.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nx-properties-listing nx-section-lg">
+                <div class="container">
+                    <div class="row g-4">
+                        <t t-foreach="properties" t-as="property_record">
+                            <div class="col-sm-6 col-lg-4">
+                                <a t-att-href="property_record.website_url" class="nx-property-card">
+                                    <div class="nx-property-card__header">
+                                        <div class="nx-property-card__type">
+                                            <span class="nx-badge nx-badge-primary">
+                                                <t t-out="property_record.type_id.name or 'Property'"/>
+                                            </span>
+                                        </div>
+                                        <div class="nx-property-card__status">
+                                            <span t-attf-class="nx-status nx-status-{{ property_record.status }}">
+                                                <t t-out="property_record.status.replace('_', ' ').title()"/>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="nx-property-card__content">
+                                        <h3 class="nx-property-card__title">
+                                            <t t-out="property_record.name"/>
+                                        </h3>
+                                        <div class="nx-property-card__meta">
+                                            <span t-if="property_record.location" class="nx-property-card__location">
+                                                📍 <t t-out="property_record.location"/>
+                                            </span>
+                                        </div>
+                                        <div class="nx-property-card__specs">
+                                            <t t-if="property_record.bedrooms">
+                                                <span class="nx-property-card__spec">
+                                                    🛏️ <t t-out="property_record.bedrooms"/> Beds
+                                                </span>
+                                            </t>
+                                            <t t-if="property_record.bathrooms">
+                                                <span class="nx-property-card__spec">
+                                                    🚿 <t t-out="property_record.bathrooms"/> Baths
+                                                </span>
+                                            </t>
+                                            <t t-if="property_record.area">
+                                                <span class="nx-property-card__spec">
+                                                    📐 <t t-out="property_record.area"/> sq ft
+                                                </span>
+                                            </t>
+                                        </div>
+                                    </div>
+                                    <div class="nx-property-card__footer">
+                                        <span class="nx-property-card__price">
+                                            <t t-if="property_record.price">
+                                                <span class="nx-property-card__price-value">$<t t-out="'{:,.0f}'.format(property_record.price)"/></span>
+                                            </t>
+                                        </span>
+                                        <span class="nx-property-card__cta">View Details →</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+
+    <template id="nx_property_detail" name="NX Property Detail">
+        <t t-call="website.layout">
+            <section class="nx-property-hero nx-section-lg">
+                <div class="container">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-lg-6">
+                            <div t-if="property_record.image_ids" class="nx-property-gallery">
+                                <img t-att-src="property_record.image_ids[0].image_url"
+                                     t-att-alt="property_record.name"
+                                     class="img-fluid nx-rounded-xl"
+                                     loading="lazy"/>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="nx-label">
+                                <t t-out="property_record.type_id.name or 'Property'"/>
+                            </p>
+                            <h1 class="nx-heading-display mb-2">
+                                <t t-out="property_record.name"/>
+                            </h1>
+                            <p class="nx-subheading mb-4">
+                                📍 <t t-out="property_record.location or 'Location not specified'"/>
+                            </p>
+
+                            <div class="nx-property-details mb-4">
+                                <div class="nx-property-detail-row">
+                                    <span class="nx-property-detail-label">Status</span>
+                                    <span t-attf-class="nx-status nx-status-{{ property_record.status }}">
+                                        <t t-out="property_record.status.replace('_', ' ').title()"/>
+                                    </span>
+                                </div>
+                                <div class="nx-property-detail-row">
+                                    <span class="nx-property-detail-label">Booking Status</span>
+                                    <span class="nx-property-detail-value">
+                                        <t t-out="property_record.booking_status.replace('_', ' ').title()"/>
+                                    </span>
+                                </div>
+                                <div class="nx-property-detail-row">
+                                    <span class="nx-property-detail-label">Payment Status</span>
+                                    <span class="nx-property-detail-value">
+                                        <t t-out="property_record.payment_status.replace('_', ' ').title()"/>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="nx-property-price mb-4">
+                                <p class="nx-property-price-label">Starting Price</p>
+                                <h2 class="nx-property-price-value">
+                                    <t t-if="property_record.price">
+                                        $<t t-out="'{:,.0f}'.format(property_record.price)"/>
+                                    </t>
+                                    <t t-else="">
+                                        Contact for Pricing
+                                    </t>
+                                </h2>
+                            </div>
+
+                            <div class="nx-property-specs mb-4">
+                                <t t-if="property_record.bedrooms">
+                                    <div class="nx-spec-box">
+                                        <span class="nx-spec-icon">🛏️</span>
+                                        <span class="nx-spec-label"><t t-out="property_record.bedrooms"/> Bedrooms</span>
+                                    </div>
+                                </t>
+                                <t t-if="property_record.bathrooms">
+                                    <div class="nx-spec-box">
+                                        <span class="nx-spec-icon">🚿</span>
+                                        <span class="nx-spec-label"><t t-out="property_record.bathrooms"/> Bathrooms</span>
+                                    </div>
+                                </t>
+                                <t t-if="property_record.area">
+                                    <div class="nx-spec-box">
+                                        <span class="nx-spec-icon">📐</span>
+                                        <span class="nx-spec-label"><t t-out="property_record.area"/> sq ft</span>
+                                    </div>
+                                </t>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg nx-rounded-pill w-100">
+                                Request Information
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="nx-property-description nx-section-md">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div t-if="property_record.description" class="nx-rich-text">
+                                <t t-out="property_record.description"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </t>
+    </template>
+
+    <template id="nx_portal_properties" name="NX Portal Properties">
+        <t t-call="portal.portal_layout">
+            <section class="nx-portal-properties nx-section-lg">
+                <div class="container">
+                    <h1 class="nx-heading-h2 mb-2">My Properties</h1>
+                    <p class="nx-text-secondary mb-4">
+                        Properties linked to your account, <strong><t t-out="partner.name"/></strong>.
+                    </p>
+
+                    <t t-if="properties">
+                        <div class="table-responsive nx-table-wrapper">
+                            <table class="table nx-table">
+                                <thead class="nx-table-head">
+                                    <tr>
+                                        <th>Property</th>
+                                        <th>Location</th>
+                                        <th>Status</th>
+                                        <th>Booking</th>
+                                        <th>Payment</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="properties" t-as="property_record">
+                                        <tr class="nx-table-row">
+                                            <td>
+                                                <a t-att-href="property_record.website_url"
+                                                   class="nx-table-link">
+                                                    <t t-out="property_record.name"/>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <t t-out="property_record.location or '—'"/>
+                                            </td>
+                                            <td>
+                                                <span t-attf-class="nx-status-badge nx-status-badge-{{ property_record.status }}">
+                                                    <t t-out="property_record.status.replace('_', ' ').title()"/>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span t-attf-class="nx-status-badge nx-status-badge-{{ property_record.booking_status }}">
+                                                    <t t-out="property_record.booking_status.replace('_', ' ').title()"/>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span t-attf-class="nx-status-badge nx-status-badge-{{ property_record.payment_status }}">
+                                                    <t t-out="property_record.payment_status.replace('_', ' ').title()"/>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <strong>
+                                                    <t t-if="property_record.price">
+                                                        $<t t-out="'{:,.0f}'.format(property_record.price)"/>
+                                                    </t>
+                                                    <t t-else="">—</t>
+                                                </strong>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div class="nx-empty-state">
+                            <p class="nx-empty-state-title">No properties yet</p>
+                            <p class="nx-empty-state-text">
+                                Your properties will appear here once they are linked to your account.
+                            </p>
+                        </div>
+                    </t>
+                </div>
+            </section>
+        </t>
+    </template>
+</odoo>

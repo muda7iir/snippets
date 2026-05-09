@@ -1,0 +1,141 @@
+<odoo>
+    <!-- Property Types -->
+    <record id="nx_property_type_apartment" model="nx.property.type">
+        <field name="name">Apartment</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="nx_property_type_villa" model="nx.property.type">
+        <field name="name">Villa</field>
+        <field name="sequence">20</field>
+    </record>
+
+    <record id="nx_property_type_townhouse" model="nx.property.type">
+        <field name="name">Townhouse</field>
+        <field name="sequence">30</field>
+    </record>
+
+    <record id="nx_property_type_commercial" model="nx.property.type">
+        <field name="name">Commercial Space</field>
+        <field name="sequence">40</field>
+    </record>
+
+    <record id="nx_property_type_plot" model="nx.property.type">
+        <field name="name">Plot</field>
+        <field name="sequence">50</field>
+    </record>
+
+    <!-- Sample Properties -->
+    
+    <!-- Available Property -->
+    <record id="nx_property_demo_1" model="nx.property">
+        <field name="name">Modern Luxury Apartment — Downtown</field>
+        <field name="type_id" ref="nx_property_type_apartment"/>
+        <field name="status">available</field>
+        <field name="booking_status">draft</field>
+        <field name="payment_status">unpaid</field>
+        <field name="price">4500000</field>
+        <field name="area">2200</field>
+        <field name="bedrooms">3</field>
+        <field name="bathrooms">2</field>
+        <field name="location">Downtown, Peshawar</field>
+        <field name="description">&lt;p&gt;&lt;strong&gt;Premium Modern Apartment&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Beautifully designed 3-bedroom apartment in the heart of downtown with:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Spacious living areas with floor-to-ceiling windows&lt;/li&gt;&lt;li&gt;Chef's kitchen with premium appliances&lt;/li&gt;&lt;li&gt;Stunning city views from balcony&lt;/li&gt;&lt;li&gt;In-building parking&lt;/li&gt;&lt;li&gt;24/7 security and concierge&lt;/li&gt;&lt;li&gt;Fitness center and swimming pool access&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Perfect for professionals and families seeking urban luxury.&lt;/p&gt;</field>
+        <field name="website_published">True</field>
+    </record>
+
+    <!-- Reserved Property -->
+    <record id="nx_property_demo_2" model="nx.property">
+        <field name="name">Spacious Family Villa — Hayatabad</field>
+        <field name="type_id" ref="nx_property_type_villa"/>
+        <field name="status">reserved</field>
+        <field name="booking_status">booked</field>
+        <field name="payment_status">partial</field>
+        <field name="price">12500000</field>
+        <field name="area">5500</field>
+        <field name="bedrooms">5</field>
+        <field name="bathrooms">4</field>
+        <field name="location">Hayatabad, Peshawar</field>
+        <field name="description">&lt;p&gt;&lt;strong&gt;Exquisite Family Villa&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Stunning 5-bedroom villa set on a gated plot featuring:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Private landscaped gardens with water features&lt;/li&gt;&lt;li&gt;Luxurious master suite with spa bath&lt;/li&gt;&lt;li&gt;Modern open-plan kitchen and living areas&lt;/li&gt;&lt;li&gt;Separate guest wing&lt;/li&gt;&lt;li&gt;Home theater and game room&lt;/li&gt;&lt;li&gt;4-car garage&lt;/li&gt;&lt;li&gt;Private security gate&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Ideal for families seeking privacy, space, and luxury.&lt;/p&gt;</field>
+        <field name="website_published">True</field>
+    </record>
+
+    <!-- Sold Property -->
+    <record id="nx_property_demo_3" model="nx.property">
+        <field name="name">Contemporary Townhouse — University Town</field>
+        <field name="type_id" ref="nx_property_type_townhouse"/>
+        <field name="status">sold</field>
+        <field name="booking_status">purchased</field>
+        <field name="payment_status">paid</field>
+        <field name="price">6800000</field>
+        <field name="area">2800</field>
+        <field name="bedrooms">3</field>
+        <field name="bathrooms">3</field>
+        <field name="location">University Town, Peshawar</field>
+        <field name="description">&lt;p&gt;&lt;strong&gt;Stylish Contemporary Townhouse&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Sold out — Award-winning architecture and design:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;3 stories of intelligent living space&lt;/li&gt;&lt;li&gt;Minimalist interior with smart home technology&lt;/li&gt;&lt;li&gt;Rooftop terrace with mountain views&lt;/li&gt;&lt;li&gt;Double garage with EV charging&lt;/li&gt;&lt;li&gt;Energy-efficient HVAC systems&lt;/li&gt;&lt;li&gt;Private study and home office&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Recently sold to satisfied family.&lt;/p&gt;</field>
+        <field name="website_published">True</field>
+    </record>
+
+    <!-- Commercial Space -->
+    <record id="nx_property_demo_4" model="nx.property">
+        <field name="name">Prime Commercial Office — Business District</field>
+        <field name="type_id" ref="nx_property_type_commercial"/>
+        <field name="status">available</field>
+        <field name="booking_status">draft</field>
+        <field name="payment_status">unpaid</field>
+        <field name="price">2200000</field>
+        <field name="area">3500</field>
+        <field name="bedrooms">0</field>
+        <field name="bathrooms">3</field>
+        <field name="location">Business District, Peshawar</field>
+        <field name="description">&lt;p&gt;&lt;strong&gt;Prime Commercial Office Space&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Professional office suite perfect for growing businesses:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;3,500 sq ft of flexible office layout&lt;/li&gt;&lt;li&gt;High-speed internet infrastructure&lt;/li&gt;&lt;li&gt;State-of-the-art conference rooms&lt;/li&gt;&lt;li&gt;Reception and waiting areas&lt;/li&gt;&lt;li&gt;Dedicated parking spaces&lt;/li&gt;&lt;li&gt;HVAC and backup power&lt;/li&gt;&lt;li&gt;Professional building with security&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Excellent location for corporate offices, consultancies, and professional firms.&lt;/p&gt;</field>
+        <field name="website_published">True</field>
+    </record>
+
+    <!-- Plot -->
+    <record id="nx_property_demo_5" model="nx.property">
+        <field name="name">Prime Residential Plot — Bahria Town</field>
+        <field name="type_id" ref="nx_property_type_plot"/>
+        <field name="status">available</field>
+        <field name="booking_status">draft</field>
+        <field name="payment_status">unpaid</field>
+        <field name="price">3500000</field>
+        <field name="area">5000</field>
+        <field name="bedrooms">0</field>
+        <field name="bathrooms">0</field>
+        <field name="location">Bahria Town, Peshawar</field>
+        <field name="description">&lt;p&gt;&lt;strong&gt;Prime Residential Plot — Build Your Dream Home&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Excellent investment opportunity in sought-after community:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;5,000 sq ft corner plot&lt;/li&gt;&lt;li&gt;Full municipal approvals in place&lt;/li&gt;&lt;li&gt;Gated community with 24/7 security&lt;/li&gt;&lt;li&gt;Access to parks, schools, and shopping&lt;/li&gt;&lt;li&gt;Utility connections ready&lt;/li&gt;&lt;li&gt;Investment appreciation potential&lt;/li&gt;&lt;li&gt;Perfect for custom builds&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Ideal for investors and those looking to build their custom residence.&lt;/p&gt;</field>
+        <field name="website_published">True</field>
+    </record>
+
+    <!-- Another Available Property -->
+    <record id="nx_property_demo_6" model="nx.property">
+        <field name="name">Elegant Studio Apartment — City Center</field>
+        <field name="type_id" ref="nx_property_type_apartment"/>
+        <field name="status">available</field>
+        <field name="booking_status">draft</field>
+        <field name="payment_status">unpaid</field>
+        <field name="price">1800000</field>
+        <field name="area">850</field>
+        <field name="bedrooms">1</field>
+        <field name="bathrooms">1</field>
+        <field name="location">City Center, Peshawar</field>
+        <field name="description">&lt;p&gt;&lt;strong&gt;Chic Modern Studio Apartment&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Perfect starter apartment in vibrant city center:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Smart space utilization&lt;/li&gt;&lt;li&gt;Modern fixtures and finishes&lt;/li&gt;&lt;li&gt;Walk-in closet&lt;/li&gt;&lt;li&gt;Rooftop access&lt;/li&gt;&lt;li&gt;Building amenities: pool and gym&lt;/li&gt;&lt;li&gt;Close to restaurants and entertainment&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Ideal for young professionals and first-time buyers.&lt;/p&gt;</field>
+        <field name="website_published">True</field>
+    </record>
+
+    <!-- Reserved Property 2 -->
+    <record id="nx_property_demo_7" model="nx.property">
+        <field name="name">Executive Twin Villa — Prestige Heights</field>
+        <field name="type_id" ref="nx_property_type_villa"/>
+        <field name="status">reserved</field>
+        <field name="booking_status">booked</field>
+        <field name="payment_status">unpaid</field>
+        <field name="price">8900000</field>
+        <field name="area">4200</field>
+        <field name="bedrooms">4</field>
+        <field name="bathrooms">3</field>
+        <field name="location">Prestige Heights, Peshawar</field>
+        <field name="description">&lt;p&gt;&lt;strong&gt;Luxurious Executive Twin Villa&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Premium twin villa in exclusive gated community:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;4 spacious bedrooms&lt;/li&gt;&lt;li&gt;Marble throughout&lt;/li&gt;&lt;li&gt;Wine cellar and walk-in pantry&lt;/li&gt;&lt;li&gt;Cinema room&lt;/li&gt;&lt;li&gt;Private spa with jacuzzi&lt;/li&gt;&lt;li&gt;Smart home automation&lt;/li&gt;&lt;li&gt;3-car garage&lt;/li&gt;&lt;li&gt;Gated community with clubhouse&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Outstanding example of luxury twin villa living.&lt;/p&gt;</field>
+        <field name="website_published">True</field>
+    </record>
+</odoo>

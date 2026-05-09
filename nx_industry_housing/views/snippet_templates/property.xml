@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_nx_property_showcase" name="NX Property Showcase">
+        <section class="s_nx_property_showcase pt-5 pb-5 s_nx_property_showcase_3cols" data-layout="sm">
+            <div class="container">
+                <h2 class="nx-heading-h2 text-center mb-4">Featured Properties</h2>
+                <div class="nx-property-grid row g-4">
+                    <div class="col-sm-6 col-lg-4 nx-property-showcase__card">
+                        <a href="/properties" class="nx-property-card">
+                            <div class="nx-property-card__header">
+                                <span class="nx-badge nx-badge-primary">Property Type</span>
+                            </div>
+                            <div class="nx-property-card__content">
+                                <h3 class="nx-property-card__title">Property Name</h3>
+                                <p class="nx-property-card__location">📍 Location</p>
+                                <div class="nx-property-card__specs">
+                                    <span class="nx-property-card__spec">🛏️ Bedrooms</span>
+                                    <span class="nx-property-card__spec">🚿 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="nx-property-card__footer">
+                                <span class="nx-property-card__price-value">$Price</span>
+                                <span class="nx-property-card__cta">View Details →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 nx-property-showcase__card">
+                        <a href="/properties" class="nx-property-card">
+                            <div class="nx-property-card__header">
+                                <span class="nx-badge nx-badge-primary">Property Type</span>
+                            </div>
+                            <div class="nx-property-card__content">
+                                <h3 class="nx-property-card__title">Property Name</h3>
+                                <p class="nx-property-card__location">📍 Location</p>
+                                <div class="nx-property-card__specs">
+                                    <span class="nx-property-card__spec">🛏️ Bedrooms</span>
+                                    <span class="nx-property-card__spec">🚿 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="nx-property-card__footer">
+                                <span class="nx-property-card__price-value">$Price</span>
+                                <span class="nx-property-card__cta">View Details →</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 nx-property-showcase__card">
+                        <a href="/properties" class="nx-property-card">
+                            <div class="nx-property-card__header">
+                                <span class="nx-badge nx-badge-primary">Property Type</span>
+                            </div>
+                            <div class="nx-property-card__content">
+                                <h3 class="nx-property-card__title">Property Name</h3>
+                                <p class="nx-property-card__location">📍 Location</p>
+                                <div class="nx-property-card__specs">
+                                    <span class="nx-property-card__spec">🛏️ Bedrooms</span>
+                                    <span class="nx-property-card__spec">🚿 Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="nx-property-card__footer">
+                                <span class="nx-property-card__price-value">$Price</span>
+                                <span class="nx-property-card__cta">View Details →</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="/properties" class="btn btn-primary btn-lg nx-rounded-pill">
+                        View All Properties
+                    </a>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
