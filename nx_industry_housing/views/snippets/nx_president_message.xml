@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ============================================================
+     PRESIDENT MESSAGE CARD — Main Snippet Template
+     Fully editable via Odoo 18 Website Builder
+============================================================= -->
+
+<template id="nx_president_message_snippet" name="President Message Card">
+<section class="nx-president-message-section o_cc o_cc1 o_colored_level"
+         data-snippet="s_nx_president_message"
+         data-name="President Message Card">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 col-12">
+
+                <div class="nx-president-card">
+
+                    <!-- ── Profile Avatar ─────────────────── -->
+                    <div class="nx-president-avatar-wrap">
+                        <img class="nx-president-avatar img-fluid"
+                             src="/nx_industry_housing/static/src/img/president-placeholder.svg"
+                             alt="President Photo"
+                             loading="lazy"/>
+                    </div>
+
+                    <!-- ── Label ──────────────────────────── -->
+                    <div class="nx-president-label o_default_snippet_text">
+                        PRESIDENT
+                    </div>
+
+                    <!-- ── Name ──────────────────────────── -->
+                    <h3 class="nx-president-name o_default_snippet_text">
+                        Dr. Muhammad Shahbaz
+                    </h3>
+
+                    <!-- ── Designation ────────────────────── -->
+                    <p class="nx-president-designation o_default_snippet_text">
+                        President, EECHS
+                    </p>
+
+                    <!-- ── Message Body ──────────────────── -->
+                    <p class="nx-president-message o_default_snippet_text">
+                        A message of dedication to our educator community.
+                        Together we are building a secure future — affordable,
+                        transparent, and well-planned housing exclusively for
+                        the education community of Khyber Pakhtunkhwa. Let us
+                        build our dream homes in a vibrant cooperative society.
+                    </p>
+
+                    <!-- ── Divider ────────────────────────── -->
+                    <div class="nx-president-divider"/>
+
+                    <!-- ── CTA Button ────────────────────── -->
+                    <a href="#" class="nx-president-btn">
+                        READ MESSAGE
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</template>
+
+</odoo>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ============================================================
+     SNIPPET OPTIONS — President Message Card
+     Customization controls for the Odoo 18 Website Editor
+============================================================= -->
+
+<template id="nx_president_message_options"
+          inherit_id="website.snippet_options"
+          name="President Message Card Options">
+    <xpath expr="." position="inside">
+
+        <!-- ── Section-level options ──────────────────────── -->
+        <div data-selector=".nx-president-message-section">
+            <we-select string="Section Spacing"
+                       data-attribute-name="sectionSpacing">
+                <we-button data-select-class="nx-spacing-sm">Compact</we-button>
+                <we-button data-select-class="" data-name="spacing_default">Default</we-button>
+                <we-button data-select-class="nx-spacing-lg">Spacious</we-button>
+            </we-select>
+        </div>
+
+        <!-- ── Card-level options ─────────────────────────── -->
+        <div data-selector=".nx-president-card">
+            <we-colorpicker string="Border Color"
+                            data-css-property="border-color"
+                            data-select-style="true"/>
+            <we-colorpicker string="Background"
+                            data-css-property="background-color"
+                            data-select-style="true"/>
+            <we-select string="Shadow"
+                       data-attribute-name="cardShadow">
+                <we-button data-select-class="">Default</we-button>
+                <we-button data-select-class="nx-shadow-none">None</we-button>
+                <we-button data-select-class="shadow-sm">Light</we-button>
+                <we-button data-select-class="shadow">Medium</we-button>
+                <we-button data-select-class="shadow-lg">Heavy</we-button>
+            </we-select>
+            <we-select string="Border Radius"
+                       data-attribute-name="cardRadius">
+                <we-button data-select-class="">Default</we-button>
+                <we-button data-select-class="nx-radius-sm">Small</we-button>
+                <we-button data-select-class="nx-radius-lg">Large</we-button>
+                <we-button data-select-class="nx-radius-xl">Extra Large</we-button>
+            </we-select>
+            <we-select string="Border Width"
+                       data-attribute-name="cardBorder">
+                <we-button data-select-class="">Default</we-button>
+                <we-button data-select-class="nx-border-thin">Thin</we-button>
+                <we-button data-select-class="nx-border-thick">Thick</we-button>
+            </we-select>
+        </div>
+
+        <!-- ── Avatar ring options ────────────────────────── -->
+        <div data-selector=".nx-president-avatar-wrap">
+            <we-colorpicker string="Ring Color"
+                            data-css-property="border-color"
+                            data-select-style="true"/>
+            <we-select string="Ring Width"
+                       data-attribute-name="avatarRing">
+                <we-button data-select-class="">Default</we-button>
+                <we-button data-select-class="nx-ring-thin">Thin</we-button>
+                <we-button data-select-class="nx-ring-thick">Thick</we-button>
+            </we-select>
+        </div>
+
+        <!-- ── Label color ────────────────────────────────── -->
+        <div data-selector=".nx-president-label">
+            <we-colorpicker string="Label Color"
+                            data-css-property="color"
+                            data-select-style="true"/>
+        </div>
+
+        <!-- ── Name color ─────────────────────────────────── -->
+        <div data-selector=".nx-president-name">
+            <we-colorpicker string="Name Color"
+                            data-css-property="color"
+                            data-select-style="true"/>
+        </div>
+
+        <!-- ── Divider color ──────────────────────────────── -->
+        <div data-selector=".nx-president-divider">
+            <we-colorpicker string="Divider Color"
+                            data-css-property="background-color"
+                            data-select-style="true"/>
+        </div>
+
+        <!-- ── Button options ─────────────────────────────── -->
+        <div data-selector=".nx-president-btn">
+            <we-colorpicker string="Button Background"
+                            data-css-property="background-color"
+                            data-select-style="true"/>
+            <we-colorpicker string="Button Border"
+                            data-css-property="border-color"
+                            data-select-style="true"/>
+            <we-colorpicker string="Button Text"
+                            data-css-property="color"
+                            data-select-style="true"/>
+            <we-select string="Button Shape"
+                       data-attribute-name="btnShape">
+                <we-button data-select-class="">Default</we-button>
+                <we-button data-select-class="nx-btn-pill">Pill</we-button>
+                <we-button data-select-class="nx-btn-square">Square</we-button>
+            </we-select>
+        </div>
+
+    </xpath>
+</template>
+
+</odoo>

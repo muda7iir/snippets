@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#f0ede6"/>
+  <!-- Head -->
+  <circle cx="100" cy="75" r="32" fill="#c9a24d" opacity="0.35"/>
+  <!-- Shoulders -->
+  <ellipse cx="100" cy="155" rx="52" ry="40" fill="#c9a24d" opacity="0.35"/>
+  <!-- Suit collar accent -->
+  <path d="M70 140 L100 160 L130 140" fill="none" stroke="#006b3c" stroke-width="3" opacity="0.4"/>
+</svg>

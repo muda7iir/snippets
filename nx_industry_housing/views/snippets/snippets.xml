@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ============================================================
+     Register President Message Card in Website Builder panel
+     → Structure section (Odoo 18 pattern)
+============================================================= -->
+
+<template id="nx_president_message_snippet_menu"
+          inherit_id="website.snippets"
+          name="President Message Card in Structure">
+    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <t t-snippet="nx_industry_housing.nx_president_message_snippet"
+           t-thumbnail="/nx_industry_housing/static/src/img/president-message-thumb.svg"/>
+    </xpath>
+</template>
+
+</odoo>

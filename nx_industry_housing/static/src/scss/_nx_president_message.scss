@@ -1,0 +1,203 @@
+// ============================================================
+//  President Message Card — Snippet Styles
+//  Fully responsive, CSS-variable driven, nx- prefixed
+// ============================================================
+
+// ------------------------------------
+//  Section wrapper
+// ------------------------------------
+.nx-president-message-section {
+  --nx-green: #006b3c;
+  --nx-gold: #c9a24d;
+  --nx-dark: #111111;
+  --nx-white: #ffffff;
+
+  padding: 80px 0;
+  position: relative;
+
+  // Spacing variants
+  &.nx-spacing-sm { padding: 40px 0; }
+  &.nx-spacing-lg { padding: 120px 0; }
+}
+
+// ------------------------------------
+//  Card
+// ------------------------------------
+.nx-president-card {
+  position: relative;
+  max-width: 680px;
+  margin: 60px auto 0;
+  background: var(--nx-white);
+  border: 3px solid var(--nx-green);
+  border-radius: 24px;
+  padding: 80px 48px 48px;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+
+  // Shadow variants
+  &.nx-shadow-none { box-shadow: none; }
+
+  // Border radius variants
+  &.nx-radius-sm  { border-radius: 12px; }
+  &.nx-radius-lg  { border-radius: 36px; }
+  &.nx-radius-xl  { border-radius: 48px; }
+
+  // Border width variants
+  &.nx-border-thin  { border-width: 1px; }
+  &.nx-border-thick { border-width: 5px; }
+}
+
+// ------------------------------------
+//  Avatar
+// ------------------------------------
+.nx-president-avatar-wrap {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--nx-gold);
+  overflow: hidden;
+  background: #f0ede6;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+
+  // Ring width variants
+  &.nx-ring-thin  { border-width: 2px; }
+  &.nx-ring-thick { border-width: 6px; }
+}
+
+.nx-president-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+// ------------------------------------
+//  Label (PRESIDENT)
+// ------------------------------------
+.nx-president-label {
+  color: var(--nx-gold);
+  font-size: clamp(11px, 1.1vw, 13px);
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+// ------------------------------------
+//  Name
+// ------------------------------------
+.nx-president-name {
+  color: var(--nx-green);
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.3;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+// ------------------------------------
+//  Designation
+// ------------------------------------
+.nx-president-designation {
+  color: var(--nx-dark);
+  font-size: clamp(13px, 1.2vw, 15px);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+// ------------------------------------
+//  Message body
+// ------------------------------------
+.nx-president-message {
+  color: var(--nx-dark);
+  font-size: clamp(14px, 1.3vw, 16px);
+  line-height: 1.85;
+  max-width: 540px;
+  margin: 0 auto 28px;
+}
+
+// ------------------------------------
+//  Divider
+// ------------------------------------
+.nx-president-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--nx-gold);
+  margin: 0 auto 28px;
+  border-radius: 2px;
+}
+
+// ------------------------------------
+//  CTA Button
+// ------------------------------------
+.nx-president-btn {
+  display: inline-block;
+  background-color: var(--nx-green);
+  color: var(--nx-white) !important;
+  border: 2px solid var(--nx-gold);
+  padding: 13px 38px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  box-shadow: 0 4px 18px rgba(0, 107, 60, 0.25);
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease,
+              filter 0.3s ease;
+
+  &:hover,
+  &:focus {
+    filter: brightness(0.88);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 107, 60, 0.35),
+                0 0 12px rgba(201, 162, 77, 0.25);
+  }
+
+  // Shape variants
+  &.nx-btn-pill   { border-radius: 50px; }
+  &.nx-btn-square { border-radius: 0; }
+}
+
+// ============================================================
+//  Responsive
+// ============================================================
+@media (max-width: 991px) {
+  .nx-president-card {
+    padding: 70px 36px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nx-president-message-section {
+    padding: 60px 12px;
+
+    &.nx-spacing-sm { padding: 32px 12px; }
+    &.nx-spacing-lg { padding: 80px 12px; }
+  }
+
+  .nx-president-card {
+    max-width: 100%;
+    padding: 64px 20px 32px;
+    border-radius: 16px;
+    margin-top: 50px;
+  }
+
+  .nx-president-avatar-wrap {
+    width: 96px;
+    height: 96px;
+    top: -48px;
+  }
+
+  .nx-president-btn {
+    padding: 11px 28px;
+    font-size: 12px;
+  }
+}
