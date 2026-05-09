@@ -20,7 +20,6 @@ Current snippets:
     'data': [
         'views/snippets/nx_president_message.xml',
         'views/snippets/snippets.xml',
-        'views/snippets/options.xml',
     ],
     'assets': {
         'web.assets_frontend': [
