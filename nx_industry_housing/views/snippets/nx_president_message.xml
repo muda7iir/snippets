@@ -6,9 +6,9 @@
      Fully editable via Odoo 18 Website Builder
 ============================================================= -->
 
-<template id="nx_president_message_snippet" name="President Message Card">
+<template id="s_nx_president_message" name="President Message Card">
 <section class="nx-president-message-section o_cc o_cc1 o_colored_level"
-         data-snippet="s_nx_president_message"
+         data-snippet="nx_industry_housing.s_nx_president_message"
          data-name="President Message Card">
     <div class="container">
         <div class="row justify-content-center">
