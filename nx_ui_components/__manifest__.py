@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'NX UI Components',
-    'version': '1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Website',
     'summary': 'Reusable UI Components',
     'depends': ['website'],
