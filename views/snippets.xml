@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ============================================================
+     EECHS KP HERO SNIPPET
+     Fully editable via Odoo Website Builder
+============================================================= -->
+
+<template id="s_eechs_hero" name="EECHS KP Hero Section">
+<section class="s_eechs_hero o_cc o_cc1 o_colored_level" data-snippet="s_eechs_hero" data-name="EECHS KP Hero" style="position:relative;overflow:hidden;background-image:url('/web/image/website.s_banner_default_image');background-size:cover;background-position:center center;background-repeat:no-repeat;min-height:100vh;">
+<div class="o_we_bg_filter bg-black-50"/>
+<div class="container-fluid" style="position:relative;z-index:5;">
+
+<!-- ── TOP NAV BAR ─────────────────────────────── -->
+<div class="row" style="background:#ffffff;margin:0 -12px;padding:0 40px;">
+<div class="col-12" style="max-width:1200px;margin:0 auto;">
+<div class="d-flex align-items-center justify-content-between" style="height:70px;">
+
+<!-- Logo area -->
+<div class="d-flex align-items-center" style="gap:10px;">
+<img src="/web/image/website.logo" class="img-fluid" alt="EECHS KP Logo" style="height:50px;width:auto;object-fit:contain;" data-original-id="1" data-original-src="/web/image/website.logo"/>
+<div style="line-height:1.1;">
+<div style="font-size:22px;font-weight:800;"><span style="color:#2d5a1b;">EECHS</span> <span style="color:#c8a84b;">KP</span></div>
+<div style="font-size:7px;color:#555;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;max-width:160px;line-height:1.2;">Education Employees Cooperative<br/>Housing Society Limited KP</div>
+</div>
+</div>
+
+<!-- Navigation Links -->
+<div class="d-flex align-items-center" style="gap:32px;">
+<a href="/" style="text-decoration:none;color:#2d5a1b;font-weight:600;font-size:14px;border-bottom:2px solid #2d5a1b;padding-bottom:2px;">Home</a>
+<a href="/about" style="text-decoration:none;color:#333;font-weight:500;font-size:14px;">About Us</a>
+<a href="/projects" style="text-decoration:none;color:#333;font-weight:500;font-size:14px;">Projects</a>
+<a href="/gallery" style="text-decoration:none;color:#333;font-weight:500;font-size:14px;">Gallery</a>
+<a href="/news" style="text-decoration:none;color:#333;font-weight:500;font-size:14px;">News</a>
+<a href="/contact" style="text-decoration:none;color:#333;font-weight:500;font-size:14px;">Contact</a>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ── HERO CONTENT ────────────────────────────── -->
+<div class="row" style="padding:90px 0 140px 0;">
+<div class="col-lg-6 col-md-8 offset-lg-0 offset-md-0" style="padding-left:60px;">
+
+<!-- Main Headline -->
+<h1 class="o_default_snippet_text" style="font-size:clamp(36px,4.5vw,58px);font-weight:800;color:#ffffff;line-height:1.1;margin-bottom:16px;text-shadow:0 2px 12px rgba(0,0,0,0.4);">A Secure Future<br/>for <span style="color:#c8a84b;font-style:italic;">Educators</span></h1>
+
+<!-- Sub-headline -->
+<p class="o_default_snippet_text" style="font-size:15px;color:#f0f0f0;line-height:1.7;max-width:480px;margin-bottom:32px;text-shadow:0 1px 4px rgba(0,0,0,0.5);">Affordable, transparent, and well-planned housing exclusively for the education community in Khyber Pakhtunkhwa. Build your dream home in a secure and vibrant cooperative society.</p>
+
+<!-- CTA Buttons -->
+<div class="d-inline-flex flex-wrap" style="gap:12px;align-items:center;">
+<a href="/register" class="btn rounded-pill" style="background-color:#2d5a1b;color:#ffffff;border:none;padding:14px 32px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;box-shadow:0 4px 15px rgba(45,90,27,0.5);">Register Now</a>
+<a href="/plot" class="btn rounded-pill" style="background:transparent;color:#ffffff;border:2px solid #ffffff;padding:12px 30px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;">Book Plot</a>
+<a href="/members" class="btn rounded-pill" style="background:transparent;color:#c8a84b;border:2px solid #c8a84b;padding:12px 30px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;">Member Portal</a>
+</div>
+
+</div>
+</div>
+
+<!-- ── BOTTOM BADGE STRIP ──────────────────────── -->
+<div class="row justify-content-center" style="padding:20px 0 30px 0;">
+<div class="col-auto">
+<div class="d-flex flex-wrap justify-content-center" style="gap:24px;">
+
+<!-- Badge 1: Reg Number -->
+<div class="text-center" style="background:#ffffff;border-radius:50%;width:110px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:3px solid #c8a84b;box-shadow:0 4px 20px rgba(0,0,0,0.3);padding:10px;">
+<div style="color:#c8a84b;font-size:10px;letter-spacing:2px;margin-bottom:2px;">★ ★ ★</div>
+<div style="font-size:9px;color:#555;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;">Reg. No.</div>
+<div style="font-size:18px;font-weight:800;color:#2d5a1b;line-height:1.1;">C-022</div>
+<div style="color:#c8a84b;font-size:10px;letter-spacing:2px;margin-top:2px;">★ ★ ★</div>
+</div>
+
+<!-- Badge 2: By Educators For Educators -->
+<div class="text-center" style="background:#ffffff;border-radius:50%;width:110px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:3px solid #c8a84b;box-shadow:0 4px 20px rgba(0,0,0,0.3);padding:10px;">
+<div style="color:#c8a84b;font-size:10px;letter-spacing:2px;margin-bottom:2px;">★ ★ ★</div>
+<div style="font-size:8px;color:#2d5a1b;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;line-height:1.4;">By<br/>Educators,<br/>For Educators</div>
+<div style="color:#c8a84b;font-size:10px;letter-spacing:2px;margin-top:2px;">★ ★ ★</div>
+</div>
+
+<!-- Badge 3: Cashless & Paperless -->
+<div class="text-center" style="background:#ffffff;border-radius:50%;width:110px;height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:3px solid #c8a84b;box-shadow:0 4px 20px rgba(0,0,0,0.3);padding:10px;">
+<div style="color:#c8a84b;font-size:10px;letter-spacing:2px;margin-bottom:2px;">★ ★ ★</div>
+<div style="font-size:8px;color:#2d5a1b;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;line-height:1.4;">Cashless<br/>&amp; Paperless<br/>System</div>
+<div style="color:#c8a84b;font-size:10px;letter-spacing:2px;margin-top:2px;">★ ★ ★</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+</template>
+
+<!-- ================================================================
+     REGISTER SNIPPET IN WEBSITE BUILDER → Structure Panel
+     Uses //snippets[@id='snippet_structure'] (Odoo 19 pattern)
+================================================================ -->
+<template id="snippet_eechs_hero_menu" inherit_id="website.snippets" name="EECHS KP Hero in Structure">
+<xpath expr="//snippets[@id='snippet_structure']" position="inside">
+<t t-snippet="snippets.s_eechs_hero"
+   string="EECHS KP Hero"
+   t-thumbnail="/snippets/static/src/img/s_eechs_hero_thumb.svg"/>
+</xpath>
+</template>
+
+</odoo>
