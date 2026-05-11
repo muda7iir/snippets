@@ -41,9 +41,27 @@
   padding: 80px 0;
   position: relative;
 
+  // ── Force NO border on the outer section itself ────
+  // Odoo editor / o_cc classes can inject borders here;
+  // we override them so the only visible border is the
+  // inner green rounded line on .nx-president-card.
+  border: none !important;
+  outline: none !important;
+
   // Spacing variants
   &.nx-spacing-sm { padding: 40px 0; }
   &.nx-spacing-lg { padding: 120px 0; }
+
+  // ── Reset borders on ALL wrapper children ──────────
+  // Prevents any Odoo editor-generated border on
+  // container, row, or column wrappers.
+  > .container,
+  > .container > .row,
+  > .container > .row > [class*="col"] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
 
 // ------------------------------------
