@@ -3,7 +3,8 @@
 
 <!-- ============================================================
      PRESIDENT MESSAGE CARD — Main Snippet Template
-     Fully editable via Odoo 18 Website Builder
+     Fully editable via Odoo Website Builder
+     All text, image, and button are inline-editable.
 ============================================================= -->
 
 <template id="s_nx_president_message" name="President Message Card">
@@ -41,11 +42,9 @@
 
                     <!-- ── Message Body ──────────────────── -->
                     <p class="nx-president-message o_default_snippet_text">
-                        A message of dedication to our educator community.
-                        Together we are building a secure future — affordable,
-                        transparent, and well-planned housing exclusively for
-                        the education community of Khyber Pakhtunkhwa. Let us
-                        build our dream homes in a vibrant cooperative society.
+                        A message of dedication to our
+                        educator community. Let's build
+                        a secure future together.
                     </p>
 
                     <!-- ── Divider ────────────────────────── -->
