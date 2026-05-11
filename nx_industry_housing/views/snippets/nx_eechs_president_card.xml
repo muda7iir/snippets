@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- ============================================================
+     EECHS PRESIDENT MESSAGE CARD — Main Snippet Template
+     Fully editable via Odoo 18 Website Builder.
+     All text, image, and button are inline-editable.
+     All visual properties driven by CSS custom properties.
+============================================================= -->
+
+<template id="s_nx_eechs_president_card" name="EECHS President Message Card">
+<section class="nx-eechs-card-section o_cc o_cc1 o_colored_level"
+         data-snippet="nx_industry_housing.s_nx_eechs_president_card"
+         data-name="EECHS President Message Card">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-12">
+
+                <div class="nx-eechs-card">
+
+                    <!-- ── Profile Image ──────────────────── -->
+                    <div class="nx-eechs-card__image-wrap">
+                        <img class="nx-eechs-card__image img-fluid"
+                             src="/nx_industry_housing/static/src/img/default-president.svg"
+                             alt="President Photo"
+                             loading="lazy"/>
+                    </div>
+
+                    <!-- ── Label ──────────────────────────── -->
+                    <div class="nx-eechs-card__label o_default_snippet_text">
+                        PRESIDENT
+                    </div>
+
+                    <!-- ── Name ──────────────────────────── -->
+                    <h3 class="nx-eechs-card__name o_default_snippet_text">
+                        Dr. Muhammad Shahbaz
+                    </h3>
+
+                    <!-- ── Designation ────────────────────── -->
+                    <p class="nx-eechs-card__designation o_default_snippet_text">
+                        President, EECHS
+                    </p>
+
+                    <!-- ── Message ────────────────────────── -->
+                    <p class="nx-eechs-card__message o_default_snippet_text">
+                        A message of dedication to our educator community.
+                        Let's build a secure future together.
+                    </p>
+
+                    <!-- ── Divider ────────────────────────── -->
+                    <div class="nx-eechs-card__divider"/>
+
+                    <!-- ── CTA Button ────────────────────── -->
+                    <a href="#" class="nx-eechs-card__btn">
+                        READ MESSAGE
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</template>
+
+</odoo>

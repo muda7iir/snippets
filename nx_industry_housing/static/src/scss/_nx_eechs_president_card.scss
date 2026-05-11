@@ -1,0 +1,221 @@
+// ============================================================
+//  EECHS President Message Card — Snippet Styles
+//  Fully responsive, CSS-variable driven, nx- prefixed.
+//  All design tokens exposed as custom properties for
+//  easy customisation from the Odoo Website Editor.
+// ============================================================
+
+// ------------------------------------
+//  Section wrapper  (no visible border)
+// ------------------------------------
+.nx-eechs-card-section {
+  // ── Design tokens ─────────────────────────────────
+  --nx-card-bg: #ffffff;
+  --nx-card-border-color: #006633;
+  --nx-card-border-width: 3px;
+  --nx-card-radius: 20px;
+  --nx-card-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+
+  --nx-image-ring-color: #B89A3D;
+  --nx-image-ring-width: 5px;
+  --nx-image-size: 150px;
+  --nx-image-inner-bg: #e0e0e0;
+  --nx-image-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+
+  --nx-accent-gold: #B89A3D;
+  --nx-primary-green: #006633;
+
+  --nx-title-color: #006633;
+  --nx-text-color: #111111;
+  --nx-label-color: #B89A3D;
+
+  --nx-divider-color: #B89A3D;
+  --nx-divider-width: 72px;
+  --nx-divider-height: 3px;
+
+  --nx-button-bg: #006633;
+  --nx-button-color: #ffffff;
+  --nx-button-border: #B89A3D;
+  --nx-button-border-width: 3px;
+  --nx-button-radius: 8px;
+  --nx-button-shadow: 0 4px 14px rgba(0, 102, 51, 0.25);
+  --nx-button-hover-bg: #004d26;
+
+  padding: 80px 0;
+  position: relative;
+
+  // Force NO border on the outer section/wrappers
+  border: none !important;
+  outline: none !important;
+
+  > .container,
+  > .container > .row,
+  > .container > .row > [class*="col"] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// ------------------------------------
+//  Card
+// ------------------------------------
+.nx-eechs-card {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+  margin-top: calc(var(--nx-image-size) / 2 + 12px);
+  background: var(--nx-card-bg);
+  border: var(--nx-card-border-width) solid var(--nx-card-border-color);
+  border-radius: var(--nx-card-radius);
+  padding: calc(var(--nx-image-size) / 2 + 18px) 36px 40px;
+  text-align: center;
+  box-shadow: var(--nx-card-shadow);
+}
+
+// ------------------------------------
+//  Profile Image
+// ------------------------------------
+.nx-eechs-card__image-wrap {
+  position: absolute;
+  top: calc(var(--nx-image-size) / -2);
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--nx-image-size);
+  height: var(--nx-image-size);
+  border-radius: 50%;
+  border: var(--nx-image-ring-width) solid var(--nx-image-ring-color);
+  overflow: hidden;
+  background: var(--nx-image-inner-bg);
+  box-shadow: var(--nx-image-shadow);
+  z-index: 2;
+}
+
+.nx-eechs-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+// ------------------------------------
+//  Label (PRESIDENT)
+// ------------------------------------
+.nx-eechs-card__label {
+  color: var(--nx-label-color);
+  font-size: clamp(11px, 1.1vw, 13px);
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+// ------------------------------------
+//  Name
+// ------------------------------------
+.nx-eechs-card__name {
+  color: var(--nx-title-color);
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 700;
+  margin-bottom: 2px;
+  line-height: 1.25;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+// ------------------------------------
+//  Designation
+// ------------------------------------
+.nx-eechs-card__designation {
+  color: var(--nx-text-color);
+  font-size: clamp(12px, 1.1vw, 14px);
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+// ------------------------------------
+//  Message
+// ------------------------------------
+.nx-eechs-card__message {
+  color: var(--nx-text-color);
+  font-size: clamp(13px, 1.2vw, 15px);
+  font-style: italic;
+  line-height: 1.8;
+  max-width: 340px;
+  margin: 0 auto 22px;
+}
+
+// ------------------------------------
+//  Divider
+// ------------------------------------
+.nx-eechs-card__divider {
+  width: var(--nx-divider-width);
+  height: var(--nx-divider-height);
+  background: var(--nx-divider-color);
+  margin: 0 auto 24px;
+  border-radius: 2px;
+}
+
+// ------------------------------------
+//  CTA Button
+// ------------------------------------
+.nx-eechs-card__btn {
+  display: inline-block;
+  background-color: var(--nx-button-bg);
+  color: var(--nx-button-color) !important;
+  border: var(--nx-button-border-width) solid var(--nx-button-border);
+  padding: 12px 32px;
+  border-radius: var(--nx-button-radius);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  box-shadow: var(--nx-button-shadow);
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--nx-button-hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(0, 102, 51, 0.35),
+                0 0 10px rgba(184, 154, 61, 0.2);
+  }
+}
+
+// ============================================================
+//  Responsive
+// ============================================================
+@media (max-width: 991px) {
+  .nx-eechs-card-section {
+    --nx-image-size: 130px;
+  }
+
+  .nx-eechs-card {
+    max-width: 400px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nx-eechs-card-section {
+    --nx-image-size: 115px;
+    padding: 60px 12px;
+  }
+
+  .nx-eechs-card {
+    max-width: 100%;
+    padding: calc(var(--nx-image-size) / 2 + 14px) 20px 30px;
+    border-radius: 14px;
+  }
+
+  .nx-eechs-card__btn {
+    padding: 10px 26px;
+    font-size: 11px;
+    width: 100%;
+    text-align: center;
+  }
+}
