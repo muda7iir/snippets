@@ -8,7 +8,7 @@
 // ------------------------------------
 //  Section wrapper  (no visible border)
 // ------------------------------------
-.nx-eechs-card-section {
+.s_nx_eechs_president_card {
   // ── Design tokens ─────────────────────────────────
   --nx-card-bg: #ffffff;
   --nx-card-border-color: #006633;
@@ -189,7 +189,7 @@
 //  Responsive
 // ============================================================
 @media (max-width: 991px) {
-  .nx-eechs-card-section {
+  .s_nx_eechs_president_card {
     --nx-image-size: 130px;
   }
 
@@ -201,7 +201,7 @@
 }
 
 @media (max-width: 767px) {
-  .nx-eechs-card-section {
+  .s_nx_eechs_president_card {
     --nx-image-size: 115px;
     padding: 60px 12px;
   }

@@ -8,7 +8,7 @@
 // ------------------------------------
 //  Section wrapper
 // ------------------------------------
-.nx-president-message-section {
+.s_nx_president_message {
   // ── Design tokens (editable) ──────────────────────
   --nx-card-border-color: #006b3c;
   --nx-card-border-width: 3px;
@@ -199,7 +199,7 @@
 //  Responsive
 // ============================================================
 @media (max-width: 991px) {
-  .nx-president-message-section {
+  .s_nx_president_message {
     --nx-avatar-size: 135px;
   }
 
@@ -211,7 +211,7 @@
 }
 
 @media (max-width: 767px) {
-  .nx-president-message-section {
+  .s_nx_president_message {
     --nx-avatar-size: 120px;
     padding: 60px 12px;
 

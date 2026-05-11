@@ -9,8 +9,8 @@
 ============================================================= -->
 
 <template id="s_nx_eechs_president_card" name="EECHS President Message Card">
-<section class="nx-eechs-card-section o_cc o_cc1 o_colored_level"
-         data-snippet="nx_industry_housing.s_nx_eechs_president_card"
+<section class="s_nx_eechs_president_card o_cc o_cc1 o_colored_level"
+         data-snippet="s_nx_eechs_president_card"
          data-name="EECHS President Message Card">
     <div class="container">
         <div class="row justify-content-center">

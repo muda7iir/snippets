@@ -8,8 +8,8 @@
 ============================================================= -->
 
 <template id="s_nx_president_message" name="President Message Card">
-<section class="nx-president-message-section o_cc o_cc1 o_colored_level"
-         data-snippet="nx_industry_housing.s_nx_president_message"
+<section class="s_nx_president_message o_cc o_cc1 o_colored_level"
+         data-snippet="s_nx_president_message"
          data-name="President Message Card">
     <div class="container">
         <div class="row justify-content-center">

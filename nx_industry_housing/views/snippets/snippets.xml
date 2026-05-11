@@ -14,9 +14,11 @@
     <xpath expr="//snippets[@id='snippet_structure']" position="inside">
         <!-- 1. President Message Card -->
         <t t-snippet="nx_industry_housing.s_nx_president_message"
+           string="President Message Card"
            t-thumbnail="/nx_industry_housing/static/src/img/president-message-thumb.svg"/>
         <!-- 2. EECHS President Message Card -->
         <t t-snippet="nx_industry_housing.s_nx_eechs_president_card"
+           string="EECHS President Card"
            t-thumbnail="/nx_industry_housing/static/src/img/eechs-president-thumb.svg"/>
     </xpath>
 </template>
