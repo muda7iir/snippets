@@ -3,24 +3,19 @@
 
 <!-- ============================================================
      Register ALL NX Housing Snippets in Website Builder panel
-     → Structure section (Odoo 18 pattern)
+     → Structure section
+     Single inherited template with all snippets registered
+     in one xpath block to avoid conflicts.
 ============================================================= -->
 
-<!-- 1. President Message Card -->
-<template id="nx_president_message_snippet_menu"
+<template id="nx_housing_snippets_menu"
           inherit_id="website.snippets"
-          name="President Message Card in Structure">
+          name="NX Housing Snippets in Structure">
     <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <!-- 1. President Message Card -->
         <t t-snippet="nx_industry_housing.s_nx_president_message"
            t-thumbnail="/nx_industry_housing/static/src/img/president-message-thumb.svg"/>
-    </xpath>
-</template>
-
-<!-- 2. EECHS President Message Card -->
-<template id="nx_eechs_president_card_snippet_menu"
-          inherit_id="website.snippets"
-          name="EECHS President Card in Structure">
-    <xpath expr="//snippets[@id='snippet_structure']" position="inside">
+        <!-- 2. EECHS President Message Card -->
         <t t-snippet="nx_industry_housing.s_nx_eechs_president_card"
            t-thumbnail="/nx_industry_housing/static/src/img/eechs-president-thumb.svg"/>
     </xpath>
