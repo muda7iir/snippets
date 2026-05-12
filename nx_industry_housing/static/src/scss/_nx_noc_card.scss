@@ -82,17 +82,58 @@
     max-width: 960px;
   }
 
-  // ── Badge ──
-  .nx-noc-badge-wrap {
+  // =================================================================
+  //  APPROVAL SEAL BADGE (pure CSS — no images)
+  // =================================================================
+  .noc-approval-badge {
     top: calc(var(--_noc-badge, 80px) / -2);
     z-index: 10;
+    pointer-events: none;
   }
-  .nx-noc-badge {
+
+  .noc-approval-badge__outer {
     width: var(--_noc-badge, 80px);
-    height: auto;
-    filter: drop-shadow(0 5px 12px rgba(0,0,0,0.25));
-    transition: transform .3s ease;
-    &:hover { transform: scale(1.06); }
+    height: var(--_noc-badge, 80px);
+    background: var(--_noc-gold, #c6a461);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.28));
+    transition: transform 0.3s ease;
+    pointer-events: auto;
+
+    // 12-point scalloped seal shape
+    clip-path: polygon(
+      50% 0%,   63% 5%,   75% 0%,
+      82% 12%,  100% 12%, 93% 25%,
+      100% 38%, 88% 45%,  100% 58%,
+      93% 68%,  100% 80%, 87% 82%,
+      82% 100%, 70% 90%,  58% 100%,
+      50% 90%,  42% 100%, 30% 90%,
+      18% 100%, 13% 82%,  0% 80%,
+      7% 68%,   0% 58%,   12% 45%,
+      0% 38%,   7% 25%,   0% 12%,
+      18% 12%,  25% 0%,   37% 5%
+    );
+
+    &:hover { transform: scale(1.08); }
+  }
+
+  .noc-approval-badge__inner {
+    width: 60%;
+    height: 60%;
+    background: var(--_noc-green, #093322);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .noc-approval-badge__tick {
+    width: 55%;
+    height: 55%;
+    color: var(--_noc-gold, #c6a461);
   }
 
   // =================================================================
