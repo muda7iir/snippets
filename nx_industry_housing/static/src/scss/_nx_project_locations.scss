@@ -19,6 +19,7 @@
     --locations-card-glow: 0 15px 40px rgba(9, 51, 34, 0.12);
     
     --locations-map-opacity: 0.06;
+    --locations-pin-size: 80px;
     
     --locations-button-bg: #093322;
     --locations-button-color: #ffffff;
@@ -92,7 +93,7 @@
         border-radius: var(--locations-card-radius);
         box-shadow: var(--locations-card-shadow);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-        overflow: hidden; // Keep preview image inside radius
+        // Removed overflow: hidden so top badge is not cropped
         
         &:hover {
             transform: translateY(-8px);
@@ -100,27 +101,37 @@
         }
     }
 
+    .nx-loc-pin-badge {
+        top: calc(var(--locations-pin-size, 80px) / -2);
+        left: 0;
+        z-index: 10;
+        pointer-events: none; // Let clicks pass through empty space
+        
+        .nx-loc-pin-img {
+            width: var(--locations-pin-size, 80px);
+            height: auto;
+            filter: drop-shadow(0 5px 12px rgba(0,0,0,0.25));
+            pointer-events: auto; // Make icon clickable for editor
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
     .nx-loc-card-preview-wrap {
         position: relative;
         height: 140px;
         overflow: hidden;
+        border-radius: var(--locations-card-radius) var(--locations-card-radius) 0 0;
         
         .nx-loc-card-preview {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
-        }
-        
-        .nx-loc-pin-badge {
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 50px;
-            z-index: 2;
-            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
-            img { width: 100%; height: 100%; }
         }
     }
 

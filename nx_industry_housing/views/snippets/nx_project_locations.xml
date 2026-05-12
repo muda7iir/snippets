@@ -37,11 +37,11 @@
                     <!-- Card 1: Hangu (Far left, slightly higher) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-1">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                                <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
+                            </div>
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Hangu"/>
-                                <div class="nx-loc-pin-badge position-absolute">
-                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
-                                </div>
                             </div>
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Hangu</h3>
@@ -60,11 +60,11 @@
                     <!-- Card 2: Mansehra (Middle-left, lower) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-2">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                                <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
+                            </div>
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Mansehra"/>
-                                <div class="nx-loc-pin-badge position-absolute">
-                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
-                                </div>
                             </div>
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Mansehra</h3>
@@ -83,11 +83,11 @@
                     <!-- Card 3: Nowshera (Center/front over map) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-3">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                                <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
+                            </div>
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Nowshera"/>
-                                <div class="nx-loc-pin-badge position-absolute">
-                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
-                                </div>
                             </div>
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Nowshera</h3>
@@ -106,11 +106,11 @@
                     <!-- Card 4: Kohat Abbottabad (Right-lower area) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-4">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                                <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
+                            </div>
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Kohat"/>
-                                <div class="nx-loc-pin-badge position-absolute">
-                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
-                                </div>
                             </div>
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Kohat Abbottabad</h3>
@@ -129,11 +129,11 @@
                     <!-- Card 5: Peshawar (Far right, Launching Soon) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-launching nx-loc-5">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                                <img src="/nx_industry_housing/static/src/img/pin-launching.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Launching Pin"/>
+                            </div>
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Peshawar"/>
-                                <div class="nx-loc-pin-badge position-absolute">
-                                    <img src="/nx_industry_housing/static/src/img/pin-launching.svg" class="img-fluid o_we_custom_image" alt="Launching Pin"/>
-                                </div>
                             </div>
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Peshawar</h3>
