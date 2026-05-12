@@ -57,32 +57,10 @@
         margin-top: 15px;
     }
 
-    // ── Grid & Desktop Floating Layout ──
+    // ── Grid Layout ──
     .nx-locations-grid {
         position: relative;
         z-index: 2;
-    }
-
-    @media (min-width: 992px) {
-        .nx-locations-grid {
-            min-height: 650px; // Ensure container is tall enough for absolute children
-            display: block; // Remove flexbox
-        }
-        
-        .nx-loc-card-wrap {
-            position: absolute;
-            width: 280px; // Fixed width for desktop cards
-            transition: all 0.5s ease;
-        }
-
-        .nx-loc-1 { top: 20px; left: 0; z-index: 2; }
-        .nx-loc-2 { top: 200px; left: 15%; z-index: 3; }
-        .nx-loc-3 { top: 120px; left: 50%; transform: translateX(-50%); z-index: 4; }
-        .nx-loc-4 { top: 300px; right: 15%; z-index: 3; }
-        .nx-loc-5 { top: 80px; right: 0; z-index: 5; } // Launching card, high z-index
-        
-        // Reset transform on hover for center card to keep it centered
-        .nx-loc-3:hover { transform: translateX(-50%) translateY(-8px); }
     }
 
     // ── Cards ──
@@ -207,17 +185,4 @@
         }
     }
 
-    // ── Launching Card Special Styling ──
-    .nx-loc-launching {
-        .nx-loc-card {
-            border-color: var(--locations-accent-gold);
-            box-shadow: 0 10px 30px rgba(198, 164, 97, 0.15);
-            &:hover {
-                box-shadow: 0 15px 40px rgba(198, 164, 97, 0.25);
-            }
-        }
-        .nx-text-gold {
-            color: var(--locations-accent-gold) !important;
-        }
-    }
 }
