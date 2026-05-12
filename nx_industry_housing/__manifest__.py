@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'NX Industry Housing Snippets',
-    'version': '1.3.0',
+    'version': '1.4.0',
     'category': 'Website',
     'summary': 'Premium website snippets for housing society websites.',
     'description': """

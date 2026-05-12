@@ -124,8 +124,6 @@
         position: absolute;
         top: -15px;
         left: 20px;
-        padding: 6px 16px;
-        border-radius: 20px;
         font-size: 0.8rem;
         font-weight: 700;
         letter-spacing: 0.5px;
@@ -164,10 +162,8 @@
         border-width: 2px;
         
         .nx-featured-banner {
-            border-radius: calc(var(--events-card-radius) - 2px) calc(var(--events-card-radius) - 2px) 0 0;
             font-size: 0.9rem;
             letter-spacing: 1px;
-            padding: 10px;
         }
         
         .nx-event-img-wrap {

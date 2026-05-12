@@ -24,7 +24,7 @@
                                         <img src="/web/image/website.s_banner_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 1"/>
                                     </div>
                                     <div class="nx-event-content position-relative">
-                                        <div class="nx-date-badge position-absolute o_colored_level" style="background-color: #f0f7f4; color: #093322;">
+                                        <div class="nx-date-badge position-absolute o_colored_level shadow-sm px-3 py-1" style="background-color: #f0f7f4; color: #093322; border-radius: 20px;">
                                             <span class="o_default_snippet_text">SEPT 10, 2023</span>
                                         </div>
                                         <h4 class="nx-event-title mb-2 o_default_snippet_text">STRATEGIC PLANNING WITH KP EDUCATION DEPT.</h4>
@@ -41,7 +41,7 @@
                                         <img src="/web/image/website.s_cover_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 2"/>
                                     </div>
                                     <div class="nx-event-content position-relative">
-                                        <div class="nx-date-badge position-absolute o_colored_level" style="background-color: #f0f7f4; color: #093322;">
+                                        <div class="nx-date-badge position-absolute o_colored_level shadow-sm px-3 py-1" style="background-color: #f0f7f4; color: #093322; border-radius: 20px;">
                                             <span class="o_default_snippet_text">AUG 22, 2023</span>
                                         </div>
                                         <h4 class="nx-event-title mb-2 o_default_snippet_text">SITE VISIT &amp; PROGRESS REVIEW</h4>
@@ -59,12 +59,12 @@
                             <!-- Featured Card -->
                             <div class="col-12 h-100">
                                 <div class="nx-event-card nx-featured-card h-100 d-flex flex-column position-relative">
-                                    <div class="nx-featured-banner text-center py-2 o_colored_level" style="background-color: #093322;">
+                                    <div class="nx-featured-banner text-center p-2 o_colored_level" style="background-color: #093322; border-top-left-radius: 14px; border-top-right-radius: 14px;">
                                         <span class="fw-bold o_default_snippet_text" style="color: #ffffff;">OFFICIAL LAUNCHING CEREMONY</span>
                                     </div>
                                     <div class="nx-event-img-wrap position-relative flex-grow-1">
                                         <img src="/web/image/website.s_text_image_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Featured Event"/>
-                                        <div class="nx-date-badge nx-date-gold position-absolute o_colored_level" style="background-color: #c6a461; color: #ffffff;">
+                                        <div class="nx-date-badge nx-date-gold position-absolute o_colored_level shadow-sm px-3 py-1" style="background-color: #c6a461; color: #ffffff; border-radius: 20px;">
                                             <span class="o_default_snippet_text">JULY 15, 2023</span>
                                         </div>
                                     </div>
@@ -101,7 +101,7 @@
                                         <img src="/web/image/website.s_parallax_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 5"/>
                                     </div>
                                     <div class="nx-event-content position-relative">
-                                        <div class="nx-date-badge position-absolute o_colored_level" style="background-color: #f0f7f4; color: #093322;">
+                                        <div class="nx-date-badge position-absolute o_colored_level shadow-sm px-3 py-1" style="background-color: #f0f7f4; color: #093322; border-radius: 20px;">
                                             <span class="o_default_snippet_text">OCT 05, 2023</span>
                                         </div>
                                         <h4 class="nx-event-title mb-2 o_default_snippet_text">DIGITAL PORTAL TRAINING FOR EDUCATORS</h4>
