@@ -1,0 +1,165 @@
+// =====================================================================
+// EECHS Digital Platform - Our Seamless Digital Process
+// =====================================================================
+
+.s_nx_process_timeline {
+    // ── CSS Variables ──
+    --process-section-bg: #fdfdfd;
+    --process-primary-green: #093322;
+    --process-accent-gold: #c6a461;
+    --process-heading-small-color: #222222;
+    --process-heading-main-color: #093322;
+    --process-text-color: #555555;
+    
+    --process-card-bg: #ffffff;
+    --process-card-border-color: #f0f0f0;
+    --process-card-border-width: 1px;
+    --process-card-radius: 16px;
+    --process-card-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    --process-card-glow: 0 5px 25px rgba(9, 51, 34, 0.08);
+    --process-card-padding: 2.5rem 1.5rem;
+    
+    --process-icon-size: 80px;
+    
+    --process-line-color: linear-gradient(90deg, #093322 0%, #c6a461 100%);
+    --process-line-glow: 0 0 10px rgba(198, 164, 97, 0.5);
+    --process-line-thickness: 4px;
+    
+    --process-node-color: #c6a461;
+    --process-node-size: 20px;
+    
+    --process-progress-bg: #e0e0e0;
+    --process-progress-fill: #093322;
+    --process-progress-radius: 4px;
+    
+    --process-watermark-opacity: 0.05;
+
+    background-color: var(--process-section-bg);
+    overflow: hidden; // Prevent horizontal scroll from absolute elements
+
+    // ── Watermarks ──
+    .nx-process-bg-left, .nx-process-bg-right {
+        opacity: var(--process-watermark-opacity);
+        img {
+            max-width: 300px;
+        }
+    }
+
+    // ── Headings ──
+    .nx-process-small-heading {
+        color: var(--process-heading-small-color);
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+    
+    .nx-process-main-heading {
+        color: var(--process-heading-main-color);
+        font-family: 'Times New Roman', Times, serif; // Premium serif
+        font-size: 2.5rem;
+        @media (max-width: 767.98px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    // ── Timeline Line ──
+    .nx-process-timeline-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .nx-process-line {
+        height: var(--process-line-thickness);
+        background: var(--process-line-color);
+        box-shadow: var(--process-line-glow);
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+
+    // ── Cards ──
+    .nx-process-card {
+        background-color: var(--process-card-bg);
+        border: var(--process-card-border-width) solid var(--process-card-border-color);
+        border-radius: var(--process-card-radius);
+        box-shadow: var(--process-card-shadow);
+        padding: var(--process-card-padding);
+        transition: all 0.3s ease;
+        z-index: 1;
+
+        &:hover {
+            box-shadow: var(--process-card-glow);
+            transform: translateY(-5px);
+        }
+
+        // ── Node (dot on timeline) ──
+        .nx-process-node {
+            width: var(--process-node-size);
+            height: var(--process-node-size);
+            background-color: var(--process-node-color);
+            border-radius: 50%;
+            top: 50%;
+            left: -10px; // Half of node size
+            transform: translateY(-50%);
+            box-shadow: 0 0 10px rgba(198, 164, 97, 0.8);
+            z-index: 2;
+        }
+
+        .nx-process-step-num {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            background-color: rgba(9, 51, 34, 0.1);
+            color: var(--process-primary-green);
+            border-radius: 50%;
+            font-weight: bold;
+            margin: 0 auto 15px auto;
+        }
+
+        .nx-process-card-top-title {
+            color: var(--process-accent-gold);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .nx-process-card-icon-wrap {
+            height: 100px;
+            .nx-process-card-icon {
+                max-width: var(--process-icon-size);
+                max-height: var(--process-icon-size);
+                transition: transform 0.3s ease;
+            }
+        }
+        
+        &:hover .nx-process-card-icon {
+            transform: scale(1.1);
+        }
+
+        .nx-process-card-main-title {
+            color: var(--process-heading-main-color);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .nx-process-card-desc {
+            color: var(--process-text-color);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        // ── Progress Bar ──
+        .nx-process-progress {
+            height: 6px;
+            background-color: var(--process-progress-bg);
+            border-radius: var(--process-progress-radius);
+            overflow: hidden;
+            
+            .nx-process-progress-fill {
+                height: 100%;
+                background-color: var(--process-progress-fill);
+                transition: width 1s ease-in-out;
+            }
+        }
+    }
+}

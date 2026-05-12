@@ -24,6 +24,10 @@
         <t t-snippet="nx_industry_housing.s_nx_noc_card"
            string="Education Department NOC Card"
            t-thumbnail="/nx_industry_housing/static/src/img/noc-card-thumb.svg"/>
+        <!-- 4. Digital Process Timeline -->
+        <t t-snippet="nx_industry_housing.s_nx_process_timeline"
+           string="Digital Process Timeline"
+           t-thumbnail="/nx_industry_housing/static/src/img/process-watermark.svg"/>
     </xpath>
 </template>
 

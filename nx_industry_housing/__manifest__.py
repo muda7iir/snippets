@@ -23,6 +23,7 @@ Current snippets:
         'views/snippets/nx_president_message.xml',
         'views/snippets/nx_eechs_president_card.xml',
         'views/snippets/nx_noc_card.xml',
+        'views/snippets/nx_process_timeline.xml',
         'views/snippets/snippets.xml',
     ],
     'assets': {
@@ -30,6 +31,7 @@ Current snippets:
             'nx_industry_housing/static/src/scss/_nx_president_message.scss',
             'nx_industry_housing/static/src/scss/_nx_eechs_president_card.scss',
             'nx_industry_housing/static/src/scss/_nx_noc_card.scss',
+            'nx_industry_housing/static/src/scss/_nx_process_timeline.scss',
         ],
     },
     'installable': True,

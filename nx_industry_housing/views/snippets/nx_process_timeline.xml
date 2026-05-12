@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_nx_process_timeline" name="Process Timeline">
+        <section class="s_nx_process_timeline o_cc o_cc1 o_colored_level pt80 pb80" data-snippet="s_nx_process_timeline" data-name="Process Timeline">
+            <!-- Background Decorative Watermarks -->
+            <div class="nx-process-bg-left d-none d-lg-block position-absolute" style="top: 10%; left: -5%; z-index: 0; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/process-watermark.svg" class="img-fluid o_we_custom_image" alt="Decorative Shape Left"/>
+            </div>
+            <div class="nx-process-bg-right d-none d-lg-block position-absolute" style="bottom: 10%; right: -5%; z-index: 0; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/process-watermark.svg" class="img-fluid o_we_custom_image" alt="Decorative Shape Right"/>
+            </div>
+
+            <div class="container position-relative" style="z-index: 1;">
+                
+                <!-- Heading Area -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h6 class="nx-process-small-heading mb-2 fw-bold text-uppercase o_default_snippet_text">EECHS DIGITAL PLATFORM</h6>
+                        <h2 class="nx-process-main-heading mb-0 fw-bold o_default_snippet_text">OUR SEAMLESS DIGITAL PROCESS</h2>
+                    </div>
+                </div>
+
+                <!-- Process Timeline Cards -->
+                <div class="nx-process-timeline-container position-relative">
+                    
+                    <!-- The connecting glowing timeline line (behind cards) -->
+                    <div class="nx-process-line d-none d-lg-block position-absolute w-100"></div>
+
+                    <div class="row align-items-stretch">
+                        
+                        <!-- Step 1 -->
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="nx-process-card h-100 position-relative d-flex flex-column text-center">
+                                <div class="nx-process-node d-none d-lg-block position-absolute"></div>
+                                <div class="nx-process-step-num o_default_snippet_text">1</div>
+                                <h5 class="nx-process-card-top-title mb-3 o_default_snippet_text">Expression of Interest</h5>
+                                <div class="nx-process-card-icon-wrap mb-4 d-flex justify-content-center align-items-center">
+                                    <img src="/nx_industry_housing/static/src/img/process-icon-1.svg" class="nx-process-card-icon img-fluid o_we_custom_image" alt="Expression of Interest"/>
+                                </div>
+                                <h4 class="nx-process-card-main-title mb-2 o_default_snippet_text">Expression of Interest</h4>
+                                <p class="nx-process-card-desc mb-4 flex-grow-1 o_default_snippet_text">Fill and submit EOI through the portal</p>
+                                <!-- Progress Bar -->
+                                <div class="nx-process-progress w-100 mt-auto">
+                                    <div class="nx-process-progress-fill" style="width: 25%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="nx-process-card h-100 position-relative d-flex flex-column text-center">
+                                <div class="nx-process-node d-none d-lg-block position-absolute"></div>
+                                <div class="nx-process-step-num o_default_snippet_text">2</div>
+                                <h5 class="nx-process-card-top-title mb-3 o_default_snippet_text">Membership Approval</h5>
+                                <div class="nx-process-card-icon-wrap mb-4 d-flex justify-content-center align-items-center">
+                                    <img src="/nx_industry_housing/static/src/img/process-icon-2.svg" class="nx-process-card-icon img-fluid o_we_custom_image" alt="Membership Approval"/>
+                                </div>
+                                <h4 class="nx-process-card-main-title mb-2 o_default_snippet_text">Membership Approval</h4>
+                                <p class="nx-process-card-desc mb-4 flex-grow-1 o_default_snippet_text">Quick verification by the membership committee</p>
+                                <!-- Progress Bar -->
+                                <div class="nx-process-progress w-100 mt-auto">
+                                    <div class="nx-process-progress-fill" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="nx-process-card h-100 position-relative d-flex flex-column text-center">
+                                <div class="nx-process-node d-none d-lg-block position-absolute"></div>
+                                <div class="nx-process-step-num o_default_snippet_text">3</div>
+                                <h5 class="nx-process-card-top-title mb-3 o_default_snippet_text">Balloting/Qurandazi</h5>
+                                <div class="nx-process-card-icon-wrap mb-4 d-flex justify-content-center align-items-center">
+                                    <img src="/nx_industry_housing/static/src/img/process-icon-3.svg" class="nx-process-card-icon img-fluid o_we_custom_image" alt="Balloting"/>
+                                </div>
+                                <h4 class="nx-process-card-main-title mb-2 o_default_snippet_text">Balloting/Qurandazi</h4>
+                                <p class="nx-process-card-desc mb-4 flex-grow-1 o_default_snippet_text">Transparent electronic draw for eligible applicants</p>
+                                <!-- Progress Bar -->
+                                <div class="nx-process-progress w-100 mt-auto">
+                                    <div class="nx-process-progress-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                            <div class="nx-process-card h-100 position-relative d-flex flex-column text-center">
+                                <div class="nx-process-node d-none d-lg-block position-absolute"></div>
+                                <div class="nx-process-step-num o_default_snippet_text">4</div>
+                                <h5 class="nx-process-card-top-title mb-3 o_default_snippet_text">Plot Allocation</h5>
+                                <div class="nx-process-card-icon-wrap mb-4 d-flex justify-content-center align-items-center">
+                                    <img src="/nx_industry_housing/static/src/img/process-icon-4.svg" class="nx-process-card-icon img-fluid o_we_custom_image" alt="Plot Allocation"/>
+                                </div>
+                                <h4 class="nx-process-card-main-title mb-2 o_default_snippet_text">Plot Allocation</h4>
+                                <p class="nx-process-card-desc mb-4 flex-grow-1 o_default_snippet_text">Formal allocation and issuance of provisional documents</p>
+                                <!-- Progress Bar -->
+                                <div class="nx-process-progress w-100 mt-auto">
+                                    <div class="nx-process-progress-fill" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>
