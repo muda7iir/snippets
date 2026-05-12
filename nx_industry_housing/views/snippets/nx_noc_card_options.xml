@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_nx_noc_card_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+
+            <!-- ====== MAIN NOC CARD OPTIONS (click section) ====== -->
+            <div data-selector=".s_nx_noc_card" string="NOC Card Style">
+
+                <!-- Color Theme -->
+                <we-select string="Color Theme">
+                    <we-button data-select-class="noc-theme-dark-green">Dark Green</we-button>
+                    <we-button data-select-class="noc-theme-forest">Forest</we-button>
+                    <we-button data-select-class="noc-theme-emerald">Emerald</we-button>
+                    <we-button data-select-class="noc-theme-navy">Navy</we-button>
+                    <we-button data-select-class="noc-theme-charcoal">Charcoal</we-button>
+                    <we-button data-select-class="noc-theme-burgundy">Burgundy</we-button>
+                </we-select>
+
+                <!-- Gold Accent -->
+                <we-select string="Accent Color">
+                    <we-button data-select-class="noc-gold-classic">Classic Gold</we-button>
+                    <we-button data-select-class="noc-gold-rich">Rich Gold</we-button>
+                    <we-button data-select-class="noc-gold-rose">Rose Gold</we-button>
+                    <we-button data-select-class="noc-gold-bronze">Bronze</we-button>
+                    <we-button data-select-class="noc-gold-silver">Silver</we-button>
+                </we-select>
+
+                <!-- Card Shadow -->
+                <we-select string="Card Shadow">
+                    <we-button data-select-class="noc-shadow-none">None</we-button>
+                    <we-button data-select-class="noc-shadow-soft">Soft</we-button>
+                    <we-button data-select-class="noc-shadow-medium">Medium</we-button>
+                    <we-button data-select-class="noc-shadow-heavy">Heavy</we-button>
+                </we-select>
+
+                <!-- Card Corners -->
+                <we-select string="Card Corners">
+                    <we-button data-select-class="noc-radius-sharp">Sharp</we-button>
+                    <we-button data-select-class="noc-radius-rounded">Rounded</we-button>
+                    <we-button data-select-class="noc-radius-extra">Extra Round</we-button>
+                </we-select>
+
+                <!-- Watermark -->
+                <we-select string="Watermark">
+                    <we-button data-select-class="noc-watermark-hidden">Hidden</we-button>
+                    <we-button data-select-class="noc-watermark-subtle">Subtle</we-button>
+                    <we-button data-select-class="noc-watermark-visible">Visible</we-button>
+                    <we-button data-select-class="noc-watermark-bold">Bold</we-button>
+                </we-select>
+
+                <!-- Badge Size -->
+                <we-select string="Badge Size">
+                    <we-button data-select-class="noc-badge-sm">Small</we-button>
+                    <we-button data-select-class="noc-badge-md">Medium</we-button>
+                    <we-button data-select-class="noc-badge-lg">Large</we-button>
+                </we-select>
+
+                <!-- Card Border -->
+                <we-select string="Card Border">
+                    <we-button data-select-class="noc-card-border-none">None</we-button>
+                    <we-button data-select-class="noc-card-border-thin">Thin</we-button>
+                    <we-button data-select-class="noc-card-border-thick">Thick</we-button>
+                </we-select>
+
+                <!-- Inner Border Width -->
+                <we-select string="Inner Border">
+                    <we-button data-select-class="noc-inner-thin">Thin</we-button>
+                    <we-button data-select-class="noc-inner-medium">Medium</we-button>
+                    <we-button data-select-class="noc-inner-thick">Thick</we-button>
+                </we-select>
+
+            </div>
+
+        </xpath>
+    </template>
+</odoo>

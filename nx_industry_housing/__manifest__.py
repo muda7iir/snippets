@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'NX Industry Housing Snippets',
-    'version': '1.1.0',
+    'version': '1.2.0',
     'category': 'Website',
     'summary': 'Premium website snippets for housing society websites.',
     'description': """
@@ -13,6 +13,7 @@ society and cooperative society websites built on Odoo 18.
 Current snippets:
 - President Message Card
 - EECHS President Message Card
+- Education Department NOC Card
     """,
     'author': 'NerithonX',
     'website': 'https://nerithonx.com',
@@ -22,6 +23,7 @@ Current snippets:
         'views/snippets/nx_president_message.xml',
         'views/snippets/nx_eechs_president_card.xml',
         'views/snippets/nx_noc_card.xml',
+        'views/snippets/nx_noc_card_options.xml',
         'views/snippets/snippets.xml',
     ],
     'assets': {
