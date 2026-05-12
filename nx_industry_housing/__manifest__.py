@@ -21,12 +21,14 @@ Current snippets:
     'data': [
         'views/snippets/nx_president_message.xml',
         'views/snippets/nx_eechs_president_card.xml',
+        'views/snippets/nx_noc_card.xml',
         'views/snippets/snippets.xml',
     ],
     'assets': {
         'web.assets_frontend': [
             'nx_industry_housing/static/src/scss/_nx_president_message.scss',
             'nx_industry_housing/static/src/scss/_nx_eechs_president_card.scss',
+            'nx_industry_housing/static/src/scss/_nx_noc_card.scss',
         ],
     },
     'installable': True,

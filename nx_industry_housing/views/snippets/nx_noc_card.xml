@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_nx_noc_card" name="Education Department NOC Card">
+        <section class="s_nx_noc_card pb48 pt48" data-snippet="s_nx_noc_card" data-name="NOC Card">
+            <div class="container d-flex justify-content-center align-items-center flex-column">
+                <div class="nx-noc-card position-relative" 
+                     style="--nx-noc-card-bg: #ffffff; 
+                            --nx-noc-card-border-color: #1a4231; 
+                            --nx-noc-card-border-width: 2px; 
+                            --nx-noc-card-radius: 12px; 
+                            --nx-noc-card-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+                            --nx-noc-inner-border-color: #1a4231; 
+                            --nx-noc-green: #1a4231; 
+                            --nx-noc-gold: #c5a365; 
+                            --nx-noc-title-color: #1a4231; 
+                            --nx-noc-text-color: #333333; 
+                            --nx-noc-box-bg: #fdfaf2; 
+                            --nx-noc-box-border: #c5a365; 
+                            --nx-noc-watermark-opacity: 0.05;">
+                    
+                    <!-- Top Approved Badge -->
+                    <div class="nx-noc-badge-wrapper text-center position-absolute w-100" style="top: -25px; z-index: 10;">
+                        <img src="/nx_industry_housing/static/src/img/default-badge.png" 
+                             class="nx-noc-badge img-fluid o_we_custom_image" 
+                             style="width: 50px; height: auto;" 
+                             alt="Approved Badge"/>
+                    </div>
+
+                    <!-- Inner Border Box -->
+                    <div class="nx-noc-inner-box position-relative m-3 p-4">
+                        <!-- Watermark Background -->
+                        <div class="nx-noc-watermark position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="pointer-events: none; opacity: var(--nx-noc-watermark-opacity); z-index: 0;">
+                            <img src="/nx_industry_housing/static/src/img/default-watermark.png" class="img-fluid w-75 o_we_custom_image" alt="Watermark"/>
+                        </div>
+
+                        <!-- Content wrapper to stay above watermark -->
+                        <div class="position-relative" style="z-index: 1;">
+                            <!-- Header Row -->
+                            <div class="row align-items-center mb-4">
+                                <div class="col-12 col-sm-3 text-center text-sm-start mb-3 mb-sm-0">
+                                    <img src="/nx_industry_housing/static/src/img/default-department-logo.png" class="nx-noc-logo img-fluid o_we_custom_image" style="max-height: 80px;" alt="Department Logo"/>
+                                </div>
+                                <div class="col-12 col-sm-9 text-center text-sm-start">
+                                    <h2 class="nx-noc-title mb-1 fw-bold o_default_snippet_text" style="font-family: serif; color: var(--nx-noc-title-color);">EDUCATION DEPARTMENT NOC</h2>
+                                    <h4 class="nx-noc-subtitle mb-0 o_default_snippet_text" style="color: var(--nx-noc-text-color);">Certificate of No Objection</h4>
+                                </div>
+                            </div>
+
+                            <!-- Body Details Row -->
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <p class="nx-noc-detail-text mb-2 o_default_snippet_text" style="color: var(--nx-noc-text-color);"><strong>Issued to:</strong> EECHS KP</p>
+                                    <p class="nx-noc-detail-text mb-0 o_default_snippet_text" style="color: var(--nx-noc-text-color);"><strong>Regulatory Body:</strong> Khyber Pakhtunkhwa Education Department</p>
+                                </div>
+                            </div>
+
+                            <!-- NOC Number Box -->
+                            <div class="nx-noc-number-box text-center p-3 mb-4 rounded" style="background-color: var(--nx-noc-box-bg); border: 1px solid var(--nx-noc-box-border);">
+                                <span class="nx-noc-label d-block mb-1 fw-bold o_default_snippet_text" style="color: var(--nx-noc-text-color);">NOC Number:</span>
+                                <h3 class="nx-noc-number mb-0 fw-bold o_default_snippet_text" style="color: var(--nx-noc-gold);">SOG/E&amp;SE/1-25/2023/COOP: Housing Society</h3>
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="nx-noc-footer text-center mt-3 pt-3" style="border-top: 1px dashed var(--nx-noc-inner-border-color);">
+                                <p class="nx-noc-verified mb-0 fw-bold text-uppercase o_default_snippet_text" style="color: var(--nx-noc-green); letter-spacing: 1px;">Verified &amp; Approved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

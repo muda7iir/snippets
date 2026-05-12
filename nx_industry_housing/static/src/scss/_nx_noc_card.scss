@@ -1,0 +1,71 @@
+// NOC Card Snippet Styles
+
+.s_nx_noc_card {
+    .nx-noc-card {
+        // Core Variables (Fallbacks in case inline styles are removed)
+        --nx-noc-card-bg: #ffffff;
+        --nx-noc-card-border-color: #1a4231;
+        --nx-noc-card-border-width: 2px;
+        --nx-noc-card-radius: 12px;
+        --nx-noc-card-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        --nx-noc-inner-border-color: #1a4231;
+        --nx-noc-green: #1a4231;
+        --nx-noc-gold: #c5a365;
+        --nx-noc-title-color: #1a4231;
+        --nx-noc-text-color: #333333;
+        --nx-noc-box-bg: #fdfaf2;
+        --nx-noc-box-border: #c5a365;
+        --nx-noc-watermark-opacity: 0.05;
+
+        background-color: var(--nx-noc-card-bg);
+        border: var(--nx-noc-card-border-width) solid var(--nx-noc-card-border-color);
+        border-radius: var(--nx-noc-card-radius);
+        box-shadow: var(--nx-noc-card-shadow);
+        max-width: 520px;
+        width: 100%;
+        margin: 0 auto;
+        
+        // Ensure parent doesn't cut off the overlapping top badge
+        overflow: visible;
+
+        .nx-noc-inner-box {
+            border: 1px solid var(--nx-noc-inner-border-color);
+            border-radius: calc(var(--nx-noc-card-radius) - 4px);
+            
+            // Adjust for mobile view stacking
+            @media (max-width: 575.98px) {
+                padding: 1.5rem 1rem !important;
+                margin: 0.75rem !important;
+            }
+        }
+
+        .nx-noc-badge-wrapper {
+            .nx-noc-badge {
+                filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+                transition: transform 0.3s ease;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .nx-noc-title {
+            @media (max-width: 575.98px) {
+                font-size: 1.5rem;
+            }
+        }
+
+        .nx-noc-subtitle {
+            @media (max-width: 575.98px) {
+                font-size: 1.1rem;
+            }
+        }
+
+        .nx-noc-number {
+            word-break: break-word;
+            @media (max-width: 575.98px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

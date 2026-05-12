@@ -20,6 +20,10 @@
         <t t-snippet="nx_industry_housing.s_nx_eechs_president_card"
            string="EECHS President Card"
            t-thumbnail="/nx_industry_housing/static/src/img/eechs-president-thumb.svg"/>
+        <!-- 3. Education Department NOC Card -->
+        <t t-snippet="nx_industry_housing.s_nx_noc_card"
+           string="Education Department NOC Card"
+           t-thumbnail="/nx_industry_housing/static/src/img/noc-card-thumb.svg"/>
     </xpath>
 </template>
 
