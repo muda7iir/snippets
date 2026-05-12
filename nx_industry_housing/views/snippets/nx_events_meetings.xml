@@ -22,11 +22,11 @@
                                 <div class="nx-event-card nx-standard-card position-relative">
                                     <div class="nx-event-img-wrap position-relative">
                                         <img src="/web/image/website.s_banner_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 1"/>
+                                    </div>
+                                    <div class="nx-event-content position-relative">
                                         <div class="nx-date-badge position-absolute">
                                             <span class="o_default_snippet_text">SEPT 10, 2023</span>
                                         </div>
-                                    </div>
-                                    <div class="nx-event-content">
                                         <h4 class="nx-event-title mb-2 o_default_snippet_text">STRATEGIC PLANNING WITH KP EDUCATION DEPT.</h4>
                                         <p class="nx-event-desc mb-4 o_default_snippet_text">Senior official discussion with senior officials and EECHS leaders.</p>
                                         <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
@@ -39,11 +39,11 @@
                                 <div class="nx-event-card nx-standard-card position-relative">
                                     <div class="nx-event-img-wrap position-relative">
                                         <img src="/web/image/website.s_cover_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 2"/>
+                                    </div>
+                                    <div class="nx-event-content position-relative">
                                         <div class="nx-date-badge position-absolute">
                                             <span class="o_default_snippet_text">AUG 22, 2023</span>
                                         </div>
-                                    </div>
-                                    <div class="nx-event-content">
                                         <h4 class="nx-event-title mb-2 o_default_snippet_text">SITE VISIT &amp; PROGRESS REVIEW</h4>
                                         <p class="nx-event-desc mb-4 o_default_snippet_text">EECHS leaders inspected developed, wide carpeted roads.</p>
                                         <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
@@ -99,11 +99,11 @@
                                 <div class="nx-event-card nx-standard-card position-relative">
                                     <div class="nx-event-img-wrap position-relative">
                                         <img src="/web/image/website.s_parallax_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 5"/>
+                                    </div>
+                                    <div class="nx-event-content position-relative">
                                         <div class="nx-date-badge position-absolute">
                                             <span class="o_default_snippet_text">OCT 05, 2023</span>
                                         </div>
-                                    </div>
-                                    <div class="nx-event-content">
                                         <h4 class="nx-event-title mb-2 o_default_snippet_text">DIGITAL PORTAL TRAINING FOR EDUCATORS</h4>
                                         <p class="nx-event-desc mb-4 o_default_snippet_text">Educators in a training hall to access and use the mobile optimized portal.</p>
                                         <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
