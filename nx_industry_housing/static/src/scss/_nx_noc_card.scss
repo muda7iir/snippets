@@ -83,57 +83,21 @@
   }
 
   // =================================================================
-  //  APPROVAL SEAL BADGE (pure CSS — no images)
+  //  APPROVAL SEAL BADGE (editable image)
   // =================================================================
   .noc-approval-badge {
     top: calc(var(--_noc-badge, 80px) / -2);
     z-index: 10;
-    pointer-events: none;
   }
 
-  .noc-approval-badge__outer {
+  .noc-approval-badge__img {
     width: var(--_noc-badge, 80px);
     height: var(--_noc-badge, 80px);
-    background: var(--_noc-gold, #c6a461);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    object-fit: contain;
     filter: drop-shadow(0 6px 14px rgba(0,0,0,0.28));
     transition: transform 0.3s ease;
-    pointer-events: auto;
-
-    // 12-point scalloped seal shape
-    clip-path: polygon(
-      50% 0%,   63% 5%,   75% 0%,
-      82% 12%,  100% 12%, 93% 25%,
-      100% 38%, 88% 45%,  100% 58%,
-      93% 68%,  100% 80%, 87% 82%,
-      82% 100%, 70% 90%,  58% 100%,
-      50% 90%,  42% 100%, 30% 90%,
-      18% 100%, 13% 82%,  0% 80%,
-      7% 68%,   0% 58%,   12% 45%,
-      0% 38%,   7% 25%,   0% 12%,
-      18% 12%,  25% 0%,   37% 5%
-    );
-
+    cursor: pointer;
     &:hover { transform: scale(1.08); }
-  }
-
-  .noc-approval-badge__inner {
-    width: 60%;
-    height: 60%;
-    background: var(--_noc-green, #093322);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .noc-approval-badge__tick {
-    width: 55%;
-    height: 55%;
-    color: var(--_noc-gold, #c6a461);
   }
 
   // =================================================================
@@ -222,10 +186,7 @@
     border: 2px solid var(--_noc-gold, #c6a461);
     border-radius: 8px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    display: inline-block;
     width: 100%;
-    max-width: 440px;
-    @media (max-width: 767.98px) { max-width: 100%; }
   }
   .nx-noc-numbox-label {
     font-size: 1.35rem; font-weight: 700;
