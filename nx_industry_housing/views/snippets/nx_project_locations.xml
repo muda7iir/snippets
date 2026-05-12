@@ -13,7 +13,12 @@
 
             <!-- Central Map Silhouette Background -->
             <div class="nx-locations-map-bg position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top: 0; left: 0; z-index: 1; pointer-events: none;">
-                <img src="/nx_industry_housing/static/src/img/map-silhouette.svg" class="img-fluid o_we_custom_image" style="max-height: 80%; opacity: var(--locations-map-opacity);" alt="Map Silhouette"/>
+                <img src="/nx_industry_housing/static/src/img/map-silhouette.svg" class="img-fluid o_we_custom_image" style="max-width: 60%; opacity: var(--locations-map-opacity);" alt="Map Silhouette"/>
+            </div>
+            
+            <!-- Bottom Ornamental Curves -->
+            <div class="nx-locations-bottom-curve position-absolute w-100" style="bottom: 0; left: 0; z-index: 0; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/ornament-curves.svg" class="img-fluid w-100 o_we_custom_image" alt="Ornamental Curve"/>
             </div>
 
             <div class="container position-relative" style="z-index: 2;">
@@ -27,12 +32,10 @@
                 </div>
 
                 <!-- Locations Grid -->
-                <!-- Desktop: Central map feel with staggered cards -->
-                <!-- Tablet/Mobile: Standard grid/stack -->
-                <div class="row justify-content-center align-items-stretch nx-locations-grid">
+                <div class="row justify-content-center nx-locations-grid">
                     
-                    <!-- Card 1: Hangu -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                    <!-- Card 1: Hangu (Far left, slightly higher) -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-1">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Hangu"/>
@@ -43,8 +46,10 @@
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Hangu</h3>
                                 <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">900 Kanal</h4>
-                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
-                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Scenic and developing area.</p>
+                                <div class="nx-loc-card-info-box flex-grow-1">
+                                    <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                    <p class="nx-loc-card-desc o_default_snippet_text">Scenic and developing area.</p>
+                                </div>
                                 <div class="mt-3">
                                     <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
                                 </div>
@@ -52,8 +57,8 @@
                         </div>
                     </div>
 
-                    <!-- Card 2: Mansehra -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                    <!-- Card 2: Mansehra (Middle-left, lower) -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-2">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Mansehra"/>
@@ -64,8 +69,10 @@
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Mansehra</h3>
                                 <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">200 Kanal</h4>
-                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
-                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Prime location with mountain views.</p>
+                                <div class="nx-loc-card-info-box flex-grow-1">
+                                    <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                    <p class="nx-loc-card-desc o_default_snippet_text">Prime location with mountain views.</p>
+                                </div>
                                 <div class="mt-3">
                                     <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
                                 </div>
@@ -73,8 +80,8 @@
                         </div>
                     </div>
 
-                    <!-- Card 3: Nowshera -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                    <!-- Card 3: Nowshera (Center/front over map) -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-3">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Nowshera"/>
@@ -85,8 +92,10 @@
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Nowshera</h3>
                                 <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">1600 Kanal</h4>
-                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
-                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Strategic location near major interchange and park.</p>
+                                <div class="nx-loc-card-info-box flex-grow-1">
+                                    <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                    <p class="nx-loc-card-desc o_default_snippet_text">Strategic location near major interchange and park.</p>
+                                </div>
                                 <div class="mt-3">
                                     <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
                                 </div>
@@ -94,8 +103,8 @@
                         </div>
                     </div>
 
-                    <!-- Card 4: Kohat Abbottabad -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                    <!-- Card 4: Kohat Abbottabad (Right-lower area) -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-4">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Kohat"/>
@@ -106,8 +115,10 @@
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Kohat Abbottabad</h3>
                                 <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">2000 Kanal</h4>
-                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
-                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Massive cooperative society project.</p>
+                                <div class="nx-loc-card-info-box flex-grow-1">
+                                    <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                    <p class="nx-loc-card-desc o_default_snippet_text">Massive cooperative society project.</p>
+                                </div>
                                 <div class="mt-3">
                                     <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
                                 </div>
@@ -115,8 +126,8 @@
                         </div>
                     </div>
 
-                    <!-- Card 5: Peshawar (Launching Soon) -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-launching">
+                    <!-- Card 5: Peshawar (Far right, Launching Soon) -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-launching nx-loc-5">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
                             <div class="nx-loc-card-preview-wrap">
                                 <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Peshawar"/>
@@ -126,9 +137,10 @@
                             </div>
                             <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
                                 <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Peshawar</h3>
-                                <h4 class="nx-loc-card-size nx-text-gold mb-3 o_default_snippet_text">Launching Soon</h4>
-                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Status:</p>
-                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Stay Tuned for Details</p>
+                                <div class="nx-loc-card-info-box flex-grow-1">
+                                    <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Status:</p>
+                                    <p class="nx-loc-card-desc o_default_snippet_text">Stay Tuned for Details</p>
+                                </div>
                                 <div class="mt-3">
                                     <a href="#" class="btn nx-loc-btn-gold o_default_snippet_text">Notify Me</a>
                                 </div>

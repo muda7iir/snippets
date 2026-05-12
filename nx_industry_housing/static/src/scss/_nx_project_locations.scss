@@ -57,6 +57,34 @@
         margin-top: 15px;
     }
 
+    // ── Grid & Desktop Floating Layout ──
+    .nx-locations-grid {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media (min-width: 992px) {
+        .nx-locations-grid {
+            min-height: 650px; // Ensure container is tall enough for absolute children
+            display: block; // Remove flexbox
+        }
+        
+        .nx-loc-card-wrap {
+            position: absolute;
+            width: 280px; // Fixed width for desktop cards
+            transition: all 0.5s ease;
+        }
+
+        .nx-loc-1 { top: 20px; left: 0; z-index: 2; }
+        .nx-loc-2 { top: 200px; left: 15%; z-index: 3; }
+        .nx-loc-3 { top: 120px; left: 50%; transform: translateX(-50%); z-index: 4; }
+        .nx-loc-4 { top: 300px; right: 15%; z-index: 3; }
+        .nx-loc-5 { top: 80px; right: 0; z-index: 5; } // Launching card, high z-index
+        
+        // Reset transform on hover for center card to keep it centered
+        .nx-loc-3:hover { transform: translateX(-50%) translateY(-8px); }
+    }
+
     // ── Cards ──
     .nx-loc-card {
         background-color: var(--locations-card-bg);
@@ -117,6 +145,14 @@
         opacity: 0.9;
     }
 
+    .nx-loc-card-info-box {
+        background-color: var(--locations-section-bg);
+        border: 1px solid var(--locations-card-border-color);
+        border-radius: 12px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
     .nx-loc-card-desc-label {
         color: var(--locations-text-color);
         font-size: 0.85rem;
@@ -127,6 +163,7 @@
     .nx-loc-card-desc {
         color: var(--locations-text-color);
         font-size: 0.95rem;
+        margin-bottom: 0;
     }
 
     // ── Buttons ──
