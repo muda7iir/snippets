@@ -15,83 +15,100 @@
                 <div class="row nx-events-masonry">
                     
                     <!-- Left Column (4/12) -->
-                    <div class="col-lg-4 col-md-6 col-12 d-flex flex-column">
-                        <!-- Card 1 -->
-                        <div class="nx-event-card nx-standard-card mb-4 position-relative">
-                            <div class="nx-event-img-wrap position-relative">
-                                <img src="/web/image/website.s_banner_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 1"/>
-                                <div class="nx-date-badge position-absolute">
-                                    <span class="o_default_snippet_text">SEPT 10, 2023</span>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="row">
+                            <!-- Card 1 -->
+                            <div class="col-12 mb-4">
+                                <div class="nx-event-card nx-standard-card position-relative">
+                                    <div class="nx-event-img-wrap position-relative">
+                                        <img src="/web/image/website.s_banner_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 1"/>
+                                        <div class="nx-date-badge position-absolute">
+                                            <span class="o_default_snippet_text">SEPT 10, 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="nx-event-content">
+                                        <h4 class="nx-event-title mb-2 o_default_snippet_text">STRATEGIC PLANNING WITH KP EDUCATION DEPT.</h4>
+                                        <p class="nx-event-desc mb-4 o_default_snippet_text">Senior official discussion with senior officials and EECHS leaders.</p>
+                                        <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="nx-event-content">
-                                <h4 class="nx-event-title mb-2 o_default_snippet_text">STRATEGIC PLANNING WITH KP EDUCATION DEPT.</h4>
-                                <p class="nx-event-desc mb-4 o_default_snippet_text">Senior official discussion with senior officials and EECHS leaders.</p>
-                                <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
-                            </div>
-                        </div>
 
-                        <!-- Card 2 -->
-                        <div class="nx-event-card nx-standard-card mb-4 position-relative">
-                            <div class="nx-event-img-wrap position-relative">
-                                <img src="/web/image/website.s_cover_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 2"/>
-                                <div class="nx-date-badge position-absolute">
-                                    <span class="o_default_snippet_text">AUG 22, 2023</span>
+                            <!-- Card 2 -->
+                            <div class="col-12 mb-4">
+                                <div class="nx-event-card nx-standard-card position-relative">
+                                    <div class="nx-event-img-wrap position-relative">
+                                        <img src="/web/image/website.s_cover_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 2"/>
+                                        <div class="nx-date-badge position-absolute">
+                                            <span class="o_default_snippet_text">AUG 22, 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="nx-event-content">
+                                        <h4 class="nx-event-title mb-2 o_default_snippet_text">SITE VISIT &amp; PROGRESS REVIEW</h4>
+                                        <p class="nx-event-desc mb-4 o_default_snippet_text">EECHS leaders inspected developed, wide carpeted roads.</p>
+                                        <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="nx-event-content">
-                                <h4 class="nx-event-title mb-2 o_default_snippet_text">SITE VISIT &amp; PROGRESS REVIEW</h4>
-                                <p class="nx-event-desc mb-4 o_default_snippet_text">EECHS leaders inspected developed, wide carpeted roads.</p>
-                                <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Center Column (Featured, 5/12) -->
                     <div class="col-lg-5 col-md-12 col-12 mb-4">
-                        <div class="nx-event-card nx-featured-card h-100 d-flex flex-column position-relative">
-                            <div class="nx-featured-banner text-center py-2">
-                                <span class="fw-bold o_default_snippet_text text-white">OFFICIAL LAUNCHING CEREMONY</span>
-                            </div>
-                            <div class="nx-event-img-wrap position-relative flex-grow-1">
-                                <img src="/web/image/website.s_text_image_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Featured Event"/>
-                                <div class="nx-date-badge nx-date-gold position-absolute">
-                                    <span class="o_default_snippet_text">JULY 15, 2023</span>
+                        <div class="row h-100">
+                            <!-- Featured Card -->
+                            <div class="col-12 h-100">
+                                <div class="nx-event-card nx-featured-card h-100 d-flex flex-column position-relative">
+                                    <div class="nx-featured-banner text-center py-2">
+                                        <span class="fw-bold o_default_snippet_text text-white">OFFICIAL LAUNCHING CEREMONY</span>
+                                    </div>
+                                    <div class="nx-event-img-wrap position-relative flex-grow-1">
+                                        <img src="/web/image/website.s_text_image_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Featured Event"/>
+                                        <div class="nx-date-badge nx-date-gold position-absolute">
+                                            <span class="o_default_snippet_text">JULY 15, 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="nx-event-content text-center">
+                                        <h4 class="nx-event-title mb-3 o_default_snippet_text">SITE VISIT &amp; PROGRESS REVIEW</h4>
+                                        <p class="nx-event-desc mb-4 o_default_snippet_text">EECHS leaders in developed, wide carpeted roads and parks.</p>
+                                        <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="nx-event-content text-center">
-                                <h4 class="nx-event-title mb-3 o_default_snippet_text">SITE VISIT &amp; PROGRESS REVIEW</h4>
-                                <p class="nx-event-desc mb-4 o_default_snippet_text">EECHS leaders in developed, wide carpeted roads and parks.</p>
-                                <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right Column (3/12) -->
-                    <div class="col-lg-3 col-md-6 col-12 d-flex flex-column">
-                        <!-- Card 4 (Image Only) -->
-                        <div class="nx-event-card nx-image-card mb-4 position-relative">
-                            <div class="nx-event-img-wrap position-relative">
-                                <img src="/web/image/website.s_carousel_default_image_1" class="nx-event-img img-fluid o_we_custom_image" alt="Image Card"/>
-                            </div>
-                            <div class="nx-image-card-overlay p-3 d-flex flex-column justify-content-end">
-                                <h5 class="text-white mb-0 o_default_snippet_text text-shadow">OFFICIAL PRESENTATION</h5>
-                                <p class="text-white-50 small mb-0 o_default_snippet_text text-shadow">Shield presentation and recognition ceremony.</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 -->
-                        <div class="nx-event-card nx-standard-card mb-4 position-relative">
-                            <div class="nx-event-img-wrap position-relative">
-                                <img src="/web/image/website.s_parallax_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 5"/>
-                                <div class="nx-date-badge position-absolute">
-                                    <span class="o_default_snippet_text">OCT 05, 2023</span>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="row">
+                            <!-- Card 4 (Image Only) -->
+                            <div class="col-12 mb-4">
+                                <div class="nx-event-card nx-image-card position-relative">
+                                    <div class="nx-event-img-wrap position-relative">
+                                        <img src="/web/image/website.s_carousel_default_image_1" class="nx-event-img img-fluid o_we_custom_image" alt="Image Card"/>
+                                    </div>
+                                    <div class="nx-image-card-overlay p-3 d-flex flex-column justify-content-end">
+                                        <h5 class="text-white mb-0 o_default_snippet_text text-shadow">OFFICIAL PRESENTATION</h5>
+                                        <p class="text-white-50 small mb-0 o_default_snippet_text text-shadow">Shield presentation and recognition ceremony.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="nx-event-content">
-                                <h4 class="nx-event-title mb-2 o_default_snippet_text">DIGITAL PORTAL TRAINING FOR EDUCATORS</h4>
-                                <p class="nx-event-desc mb-4 o_default_snippet_text">Educators in a training hall to access and use the mobile optimized portal.</p>
-                                <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
+
+                            <!-- Card 5 -->
+                            <div class="col-12 mb-4">
+                                <div class="nx-event-card nx-standard-card position-relative">
+                                    <div class="nx-event-img-wrap position-relative">
+                                        <img src="/web/image/website.s_parallax_default_image" class="nx-event-img img-fluid o_we_custom_image" alt="Event 5"/>
+                                        <div class="nx-date-badge position-absolute">
+                                            <span class="o_default_snippet_text">OCT 05, 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="nx-event-content">
+                                        <h4 class="nx-event-title mb-2 o_default_snippet_text">DIGITAL PORTAL TRAINING FOR EDUCATORS</h4>
+                                        <p class="nx-event-desc mb-4 o_default_snippet_text">Educators in a training hall to access and use the mobile optimized portal.</p>
+                                        <a href="#" class="btn nx-event-btn o_default_snippet_text">VIEW GALLERY</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
