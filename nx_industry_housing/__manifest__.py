@@ -23,7 +23,6 @@ Current snippets:
         'views/snippets/nx_president_message.xml',
         'views/snippets/nx_eechs_president_card.xml',
         'views/snippets/nx_noc_card.xml',
-        'views/snippets/nx_noc_card_options.xml',
         'views/snippets/snippets.xml',
     ],
     'assets': {
