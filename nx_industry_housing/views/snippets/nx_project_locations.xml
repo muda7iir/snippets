@@ -37,7 +37,7 @@
                     <!-- Card 1: Hangu (Far left, slightly higher) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-1">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
-                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                            <div class="nx-loc-pin-badge position-absolute">
                                 <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
                             </div>
                             <div class="nx-loc-card-preview-wrap">
@@ -60,7 +60,7 @@
                     <!-- Card 2: Mansehra (Middle-left, lower) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-2">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
-                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                            <div class="nx-loc-pin-badge position-absolute">
                                 <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
                             </div>
                             <div class="nx-loc-card-preview-wrap">
@@ -83,7 +83,7 @@
                     <!-- Card 3: Nowshera (Center/front over map) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-3">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
-                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                            <div class="nx-loc-pin-badge position-absolute">
                                 <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
                             </div>
                             <div class="nx-loc-card-preview-wrap">
@@ -106,7 +106,7 @@
                     <!-- Card 4: Kohat Abbottabad (Right-lower area) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-4">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
-                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                            <div class="nx-loc-pin-badge position-absolute">
                                 <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Pin"/>
                             </div>
                             <div class="nx-loc-card-preview-wrap">
@@ -129,7 +129,7 @@
                     <!-- Card 5: Peshawar (Far right, Launching Soon) -->
                     <div class="col-lg-3 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-launching nx-loc-5">
                         <div class="nx-loc-card h-100 d-flex flex-column position-relative">
-                            <div class="nx-loc-pin-badge position-absolute w-100 d-flex justify-content-center">
+                            <div class="nx-loc-pin-badge position-absolute">
                                 <img src="/nx_industry_housing/static/src/img/pin-launching.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" alt="Launching Pin"/>
                             </div>
                             <div class="nx-loc-card-preview-wrap">

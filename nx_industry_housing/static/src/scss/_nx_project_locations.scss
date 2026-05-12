@@ -19,7 +19,6 @@
     --locations-card-glow: 0 15px 40px rgba(9, 51, 34, 0.12);
     
     --locations-map-opacity: 0.06;
-    --locations-pin-size: 80px;
     
     --locations-button-bg: #093322;
     --locations-button-color: #ffffff;
@@ -102,16 +101,16 @@
     }
 
     .nx-loc-pin-badge {
-        top: calc(var(--locations-pin-size, 80px) / -2);
-        left: 0;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%); // Precisely centers the image on the top edge
         z-index: 10;
-        pointer-events: none; // Let clicks pass through empty space
         
         .nx-loc-pin-img {
-            width: var(--locations-pin-size, 80px);
+            width: 65px; // Default small size, but fully resizable in Odoo
             height: auto;
             filter: drop-shadow(0 5px 12px rgba(0,0,0,0.25));
-            pointer-events: auto; // Make icon clickable for editor
             transition: transform 0.3s ease;
             cursor: pointer;
             
