@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_nx_project_locations" name="Project Locations">
+        <section class="s_nx_project_locations o_cc o_cc1 o_colored_level pt80 pb80 position-relative" data-snippet="s_nx_project_locations" data-name="Project Locations">
+            
+            <!-- Background Decorative Watermarks -->
+            <div class="nx-locations-bg-left d-none d-lg-block position-absolute" style="top: 10%; left: -5%; z-index: 0; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/process-watermark.svg" class="img-fluid o_we_custom_image" alt="Decorative Shape Left"/>
+            </div>
+            <div class="nx-locations-bg-right d-none d-lg-block position-absolute" style="bottom: 10%; right: -5%; z-index: 0; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/process-watermark.svg" class="img-fluid o_we_custom_image" alt="Decorative Shape Right"/>
+            </div>
+
+            <!-- Central Map Silhouette Background -->
+            <div class="nx-locations-map-bg position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top: 0; left: 0; z-index: 1; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/map-silhouette.svg" class="img-fluid o_we_custom_image" style="max-height: 80%; opacity: var(--locations-map-opacity);" alt="Map Silhouette"/>
+            </div>
+
+            <div class="container position-relative" style="z-index: 2;">
+                
+                <!-- Heading Area -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center nx-locations-heading-area">
+                        <h2 class="nx-locations-heading fw-bold mb-3 o_default_snippet_text">PROJECT LOCATIONS</h2>
+                        <div class="nx-locations-underline mx-auto"></div>
+                    </div>
+                </div>
+
+                <!-- Locations Grid -->
+                <!-- Desktop: Central map feel with staggered cards -->
+                <!-- Tablet/Mobile: Standard grid/stack -->
+                <div class="row justify-content-center align-items-stretch nx-locations-grid">
+                    
+                    <!-- Card 1: Hangu -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                        <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-card-preview-wrap">
+                                <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Hangu"/>
+                                <div class="nx-loc-pin-badge position-absolute">
+                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
+                                </div>
+                            </div>
+                            <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
+                                <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Hangu</h3>
+                                <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">900 Kanal</h4>
+                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Scenic and developing area.</p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Mansehra -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                        <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-card-preview-wrap">
+                                <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Mansehra"/>
+                                <div class="nx-loc-pin-badge position-absolute">
+                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
+                                </div>
+                            </div>
+                            <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
+                                <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Mansehra</h3>
+                                <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">200 Kanal</h4>
+                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Prime location with mountain views.</p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Nowshera -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                        <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-card-preview-wrap">
+                                <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Nowshera"/>
+                                <div class="nx-loc-pin-badge position-absolute">
+                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
+                                </div>
+                            </div>
+                            <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
+                                <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Nowshera</h3>
+                                <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">1600 Kanal</h4>
+                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Strategic location near major interchange and park.</p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Kohat Abbottabad -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap">
+                        <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-card-preview-wrap">
+                                <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Kohat"/>
+                                <div class="nx-loc-pin-badge position-absolute">
+                                    <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="img-fluid o_we_custom_image" alt="Pin"/>
+                                </div>
+                            </div>
+                            <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
+                                <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Kohat Abbottabad</h3>
+                                <h4 class="nx-loc-card-size mb-3 o_default_snippet_text">2000 Kanal</h4>
+                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Short Description:</p>
+                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Massive cooperative society project.</p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Peshawar (Launching Soon) -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 nx-loc-card-wrap nx-loc-launching">
+                        <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-loc-card-preview-wrap">
+                                <img src="/nx_industry_housing/static/src/img/card-map-preview.svg" class="nx-loc-card-preview img-fluid o_we_custom_image" alt="Map Preview Peshawar"/>
+                                <div class="nx-loc-pin-badge position-absolute">
+                                    <img src="/nx_industry_housing/static/src/img/pin-launching.svg" class="img-fluid o_we_custom_image" alt="Launching Pin"/>
+                                </div>
+                            </div>
+                            <div class="nx-loc-card-content flex-grow-1 d-flex flex-column text-center">
+                                <h3 class="nx-loc-card-title mb-1 o_default_snippet_text">Peshawar</h3>
+                                <h4 class="nx-loc-card-size nx-text-gold mb-3 o_default_snippet_text">Launching Soon</h4>
+                                <p class="nx-loc-card-desc-label mb-1 fw-bold o_default_snippet_text">Status:</p>
+                                <p class="nx-loc-card-desc flex-grow-1 o_default_snippet_text">Stay Tuned for Details</p>
+                                <div class="mt-3">
+                                    <a href="#" class="btn nx-loc-btn-gold o_default_snippet_text">Notify Me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

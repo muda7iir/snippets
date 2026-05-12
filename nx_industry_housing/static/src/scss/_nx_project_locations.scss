@@ -1,0 +1,177 @@
+// =====================================================================
+// Project Locations
+// =====================================================================
+
+.s_nx_project_locations {
+    // ── CSS Variables ──
+    --locations-section-bg: #f8fbf9;
+    --locations-primary-green: #093322;
+    --locations-accent-gold: #c6a461;
+    --locations-heading-color: #093322;
+    --locations-text-color: #555555;
+    --locations-underline-color: #c6a461;
+    
+    --locations-card-bg: #ffffff;
+    --locations-card-border-color: #e8f4f0;
+    --locations-card-border-width: 1px;
+    --locations-card-radius: 20px;
+    --locations-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --locations-card-glow: 0 15px 40px rgba(9, 51, 34, 0.12);
+    
+    --locations-map-opacity: 0.06;
+    
+    --locations-button-bg: #093322;
+    --locations-button-color: #ffffff;
+    --locations-button-hover-bg: #c6a461;
+    --locations-button-radius: 8px;
+    
+    --locations-watermark-opacity: 0.05;
+
+    background-color: var(--locations-section-bg);
+    overflow: hidden;
+
+    // ── Watermarks ──
+    .nx-locations-bg-left, .nx-locations-bg-right {
+        opacity: var(--locations-watermark-opacity);
+        img { max-width: 400px; }
+    }
+
+    // ── Headings ──
+    .nx-locations-heading-area {
+        position: relative;
+    }
+    
+    .nx-locations-heading {
+        color: var(--locations-heading-color);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        @media (max-width: 767.98px) { font-size: 2rem; }
+    }
+
+    .nx-locations-underline {
+        width: 120px;
+        height: 3px;
+        background-color: var(--locations-underline-color);
+        border-radius: 2px;
+        margin-top: 15px;
+    }
+
+    // ── Cards ──
+    .nx-loc-card {
+        background-color: var(--locations-card-bg);
+        border: var(--locations-card-border-width) solid var(--locations-card-border-color);
+        border-radius: var(--locations-card-radius);
+        box-shadow: var(--locations-card-shadow);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden; // Keep preview image inside radius
+        
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--locations-card-glow);
+        }
+    }
+
+    .nx-loc-card-preview-wrap {
+        position: relative;
+        height: 140px;
+        overflow: hidden;
+        
+        .nx-loc-card-preview {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .nx-loc-pin-badge {
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            z-index: 2;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+            img { width: 100%; height: 100%; }
+        }
+    }
+
+    .nx-loc-card:hover .nx-loc-card-preview {
+        transform: scale(1.1);
+    }
+
+    .nx-loc-card-content {
+        padding: 35px 20px 25px 20px; // Extra top padding for pin overlap
+    }
+
+    .nx-loc-card-title {
+        color: var(--locations-heading-color);
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .nx-loc-card-size {
+        color: var(--locations-primary-green);
+        font-size: 1.1rem;
+        font-weight: 600;
+        opacity: 0.9;
+    }
+
+    .nx-loc-card-desc-label {
+        color: var(--locations-text-color);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .nx-loc-card-desc {
+        color: var(--locations-text-color);
+        font-size: 0.95rem;
+    }
+
+    // ── Buttons ──
+    .nx-loc-btn {
+        background-color: var(--locations-button-bg);
+        color: var(--locations-button-color) !important;
+        border-radius: var(--locations-button-radius);
+        padding: 8px 24px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        
+        &:hover {
+            background-color: var(--locations-button-hover-bg);
+            color: #fff !important;
+            transform: scale(1.05);
+        }
+    }
+
+    .nx-loc-btn-gold {
+        background-color: var(--locations-accent-gold);
+        color: #fff !important;
+        border-radius: var(--locations-button-radius);
+        padding: 8px 24px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        
+        &:hover {
+            background-color: var(--locations-primary-green);
+            transform: scale(1.05);
+        }
+    }
+
+    // ── Launching Card Special Styling ──
+    .nx-loc-launching {
+        .nx-loc-card {
+            border-color: var(--locations-accent-gold);
+            box-shadow: 0 10px 30px rgba(198, 164, 97, 0.15);
+            &:hover {
+                box-shadow: 0 15px 40px rgba(198, 164, 97, 0.25);
+            }
+        }
+        .nx-text-gold {
+            color: var(--locations-accent-gold) !important;
+        }
+    }
+}

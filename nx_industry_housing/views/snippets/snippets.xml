@@ -32,6 +32,10 @@
         <t t-snippet="nx_industry_housing.s_nx_access_anywhere"
            string="Access EECHS Anywhere"
            t-thumbnail="/nx_industry_housing/static/src/img/phone-mockup.svg"/>
+        <!-- 6. Project Locations -->
+        <t t-snippet="nx_industry_housing.s_nx_project_locations"
+           string="Project Locations"
+           t-thumbnail="/nx_industry_housing/static/src/img/pin-active.svg"/>
     </xpath>
 </template>
 
