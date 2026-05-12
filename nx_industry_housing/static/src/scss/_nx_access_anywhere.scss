@@ -1,0 +1,151 @@
+// =====================================================================
+// Access EECHS Anytime, Anywhere - App Showcase
+// =====================================================================
+
+.s_nx_access_anywhere {
+    // ── CSS Variables ──
+    --access-section-bg: #ffffff;
+    --access-primary-green: #093322;
+    --access-accent-gold: #c6a461;
+    --access-heading-color: #093322;
+    --access-text-color: #555555;
+    --access-underline-color: #c6a461;
+    
+    --access-phone-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    --access-phone-glow: 0 10px 40px rgba(9, 51, 34, 0.12);
+    --access-phone-hover-transform: translateY(-10px);
+    
+    --access-watermark-opacity: 0.04;
+    --access-icon-size: 60px;
+    
+    background-color: var(--access-section-bg);
+    overflow: hidden; // Prevent horizontal scroll from absolute elements
+
+    // ── Watermarks ──
+    .nx-access-bg-left, .nx-access-bg-right {
+        opacity: var(--access-watermark-opacity);
+        img {
+            max-width: 400px;
+        }
+    }
+
+    // ── Headings ──
+    .nx-access-heading-area {
+        position: relative;
+    }
+    
+    .nx-access-heading {
+        color: var(--access-heading-color);
+        font-family: 'Times New Roman', Times, serif; // Premium serif
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        @media (max-width: 767.98px) {
+            font-size: 2rem;
+        }
+    }
+
+    .nx-access-underline {
+        width: 120px;
+        height: 3px;
+        background-color: var(--access-underline-color);
+        border-radius: 2px;
+        margin-top: 15px;
+    }
+
+    // ── Visual Mockups (Phones) ──
+    .nx-access-phones-row {
+        perspective: 1000px; // Gives depth to rotated phones
+    }
+
+    .nx-access-phone {
+        transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        img {
+            border-radius: 30px; // Smooth rounded edges matching mockups
+            box-shadow: var(--access-phone-shadow);
+            max-width: 100%;
+            height: auto;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        &:hover {
+            transform: var(--access-phone-hover-transform) !important; // override inline rotation on hover
+            img {
+                box-shadow: var(--access-phone-glow);
+            }
+        }
+    }
+
+    // Phone Transformations (Desktop)
+    @media (min-width: 992px) {
+        .nx-phone-left {
+            transform: rotate(-12deg) scale(0.9) translateX(20px);
+            z-index: 1;
+        }
+        
+        .nx-phone-center {
+            transform: scale(1.1);
+            z-index: 3;
+            img {
+                box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2); // Stronger shadow for center
+            }
+        }
+        
+        .nx-phone-right {
+            transform: rotate(12deg) scale(0.9) translateX(-20px);
+            z-index: 1;
+        }
+    }
+
+    // Phone Transformations (Tablet)
+    @media (max-width: 991.98px) and (min-width: 768px) {
+        .nx-phone-left {
+            transform: rotate(-8deg) scale(0.9) translateX(10px);
+        }
+        .nx-phone-center {
+            transform: scale(1.05);
+            z-index: 3;
+        }
+        .nx-phone-right {
+            transform: rotate(8deg) scale(0.9) translateX(-10px);
+        }
+    }
+
+    // ── Bottom Feature Text ──
+    .nx-access-feature {
+        padding: 0 15px;
+    }
+
+    .nx-access-icon {
+        height: var(--access-icon-size);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-height: 100%;
+            max-width: var(--access-icon-size);
+            transition: transform 0.3s ease;
+        }
+    }
+    
+    .nx-access-feature:hover .nx-access-icon img {
+        transform: scale(1.15);
+    }
+
+    .nx-access-feature-title {
+        color: var(--access-heading-color);
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .nx-access-feature-desc {
+        color: var(--access-text-color);
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+    
+    // Depth Control
+    .z-index-1 { z-index: 1; }
+    .z-index-2 { z-index: 2; }
+}

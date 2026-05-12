@@ -28,6 +28,10 @@
         <t t-snippet="nx_industry_housing.s_nx_process_timeline"
            string="Digital Process Timeline"
            t-thumbnail="/nx_industry_housing/static/src/img/process-watermark.svg"/>
+        <!-- 5. Access EECHS Anywhere -->
+        <t t-snippet="nx_industry_housing.s_nx_access_anywhere"
+           string="Access EECHS Anywhere"
+           t-thumbnail="/nx_industry_housing/static/src/img/phone-mockup.svg"/>
     </xpath>
 </template>
 

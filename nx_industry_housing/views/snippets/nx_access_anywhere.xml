@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_nx_access_anywhere" name="Access Anywhere Showcase">
+        <section class="s_nx_access_anywhere o_cc o_cc1 o_colored_level pt80 pb80" data-snippet="s_nx_access_anywhere" data-name="Access Anywhere Showcase">
+            <!-- Background Decorative Watermarks -->
+            <div class="nx-access-bg-left d-none d-lg-block position-absolute" style="top: 15%; left: -8%; z-index: 0; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/process-watermark.svg" class="img-fluid o_we_custom_image" alt="Decorative Left"/>
+            </div>
+            <div class="nx-access-bg-right d-none d-lg-block position-absolute" style="bottom: 15%; right: -8%; z-index: 0; pointer-events: none;">
+                <img src="/nx_industry_housing/static/src/img/process-watermark.svg" class="img-fluid o_we_custom_image" alt="Decorative Right"/>
+            </div>
+
+            <div class="container position-relative" style="z-index: 1;">
+                
+                <!-- Heading Area -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center nx-access-heading-area">
+                        <h2 class="nx-access-heading fw-bold mb-3 o_default_snippet_text">ACCESS EECHS ANYTIME, ANYWHERE</h2>
+                        <div class="nx-access-underline mx-auto"></div>
+                    </div>
+                </div>
+
+                <!-- Visual Mockups (Phones) -->
+                <div class="row justify-content-center align-items-center mb-5 nx-access-phones-row">
+                    <!-- Left Phone (Tilted Left) -->
+                    <div class="col-8 col-md-4 col-lg-3 text-center mb-4 mb-md-0 position-relative z-index-1">
+                        <div class="nx-access-phone nx-phone-left">
+                            <img src="/nx_industry_housing/static/src/img/phone-mockup.svg" class="img-fluid o_we_custom_image" alt="Member Dashboard"/>
+                        </div>
+                    </div>
+
+                    <!-- Center Phone (Straight, Prominent) -->
+                    <div class="col-10 col-md-4 col-lg-4 text-center mb-4 mb-md-0 position-relative z-index-2">
+                        <div class="nx-access-phone nx-phone-center">
+                            <img src="/nx_industry_housing/static/src/img/phone-mockup.svg" class="img-fluid o_we_custom_image" alt="Application Submission"/>
+                        </div>
+                    </div>
+
+                    <!-- Right Phone (Tilted Right) -->
+                    <div class="col-8 col-md-4 col-lg-3 text-center position-relative z-index-1">
+                        <div class="nx-access-phone nx-phone-right">
+                            <img src="/nx_industry_housing/static/src/img/phone-mockup.svg" class="img-fluid o_we_custom_image" alt="Status Tracking"/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Text Features -->
+                <div class="row text-center mt-5">
+                    <!-- Left Feature -->
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                        <div class="nx-access-feature">
+                            <div class="nx-access-icon mb-3">
+                                <img src="/nx_industry_housing/static/src/img/icon-mobile.svg" class="img-fluid o_we_custom_image" alt="Mobile Portal"/>
+                            </div>
+                            <h4 class="nx-access-feature-title mb-2 o_default_snippet_text">MOBILE-OPTIMIZED PORTAL</h4>
+                            <p class="nx-access-feature-desc o_default_snippet_text">Seamless experience on all devices.</p>
+                        </div>
+                    </div>
+
+                    <!-- Center Feature -->
+                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                        <div class="nx-access-feature">
+                            <div class="nx-access-icon mb-3">
+                                <img src="/nx_industry_housing/static/src/img/icon-form.svg" class="img-fluid o_we_custom_image" alt="Easy Forms"/>
+                            </div>
+                            <h4 class="nx-access-feature-title mb-2 o_default_snippet_text">EASY APPLICATION SUBMISSION</h4>
+                            <p class="nx-access-feature-desc o_default_snippet_text">Simplified digital forms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Feature -->
+                    <div class="col-12 col-md-4">
+                        <div class="nx-access-feature">
+                            <div class="nx-access-icon mb-3">
+                                <img src="/nx_industry_housing/static/src/img/icon-tracking.svg" class="img-fluid o_we_custom_image" alt="Real-time Status"/>
+                            </div>
+                            <h4 class="nx-access-feature-title mb-2 o_default_snippet_text">INSTANT RECORDS &amp; UPDATES</h4>
+                            <p class="nx-access-feature-desc o_default_snippet_text">Your portal, always current.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+</odoo>
