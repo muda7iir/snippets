@@ -4,57 +4,63 @@
         <section class="s_nx_noc_card o_cc o_cc1 o_colored_level noc-theme-dark-green noc-gold-classic noc-shadow-soft noc-radius-rounded noc-watermark-subtle noc-badge-md noc-card-border-none noc-inner-medium pt80 pb80"
                  data-snippet="s_nx_noc_card"
                  data-name="Education Department NOC Card">
-            <div class="container d-flex justify-content-center">
-                <div class="nx-noc-card-wrap position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12 col-12">
 
-                    <!-- Top Badge (overlaps card top) -->
-                    <div class="nx-noc-badge-wrap position-absolute w-100 d-flex justify-content-center">
-                        <img src="/nx_industry_housing/static/src/img/default-badge.png"
-                             class="nx-noc-badge img-fluid o_we_custom_image" alt="Approved Badge"/>
-                    </div>
+                        <div class="nx-noc-card-wrap position-relative">
 
-                    <!-- Main White Card -->
-                    <div class="nx-noc-main-card">
-
-                        <!-- Two-Line Title -->
-                        <div class="nx-noc-title-area text-center">
-                            <h2 class="nx-noc-title-l1 mb-0 o_default_snippet_text">EDUCATION DEPARTMENT</h2>
-                            <h2 class="nx-noc-title-l2 mb-0 o_default_snippet_text">NOC</h2>
-                        </div>
-
-                        <!-- Inner Green-Bordered Certificate Box -->
-                        <div class="nx-noc-inner-box position-relative mt-4">
-
-                            <!-- Watermark -->
-                            <div class="nx-noc-watermark position-absolute d-flex align-items-center justify-content-end pe-5">
-                                <img src="/nx_industry_housing/static/src/img/default-watermark.png"
-                                     class="img-fluid o_we_custom_image" alt="Watermark"/>
+                            <!-- Top Badge (overlaps card top) -->
+                            <div class="nx-noc-badge-wrap position-absolute w-100 d-flex justify-content-center">
+                                <img src="/nx_industry_housing/static/src/img/default-badge.png"
+                                     class="nx-noc-badge img-fluid o_we_custom_image" alt="Approved Badge"/>
                             </div>
 
-                            <!-- Content -->
-                            <div class="row align-items-stretch position-relative" style="z-index:1;">
-                                <!-- Left: Logo -->
-                                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-4 mb-md-0">
-                                    <img src="/nx_industry_housing/static/src/img/default-department-logo.png"
-                                         class="nx-noc-logo img-fluid o_we_custom_image" alt="Department Logo"/>
-                                </div>
-                                <!-- Right: Details -->
-                                <div class="col-12 col-md-8 d-flex flex-column justify-content-center">
-                                    <h3 class="nx-noc-cert mb-1 o_default_snippet_text">Certificate of No Objection</h3>
-                                    <h4 class="nx-noc-issued mb-3 o_default_snippet_text">Issued to <strong>EECHS KP</strong></h4>
-                                    <div class="nx-noc-divider mb-3"></div>
-                                    <p class="nx-noc-reg mb-3 o_default_snippet_text"><strong>Regulatory Body:</strong> Khyber Pakhtunkhwa Education Department</p>
+                            <!-- Main White Card -->
+                            <div class="nx-noc-main-card">
 
-                                    <!-- NOC Number Box -->
-                                    <div class="nx-noc-numbox p-3 mb-4">
-                                        <h5 class="nx-noc-numbox-label mb-1 o_default_snippet_text">NOC Number:</h5>
-                                        <h6 class="nx-noc-numbox-val mb-0 o_default_snippet_text">SOG/E&amp;SE/1-25/2023/COOP: Housing Society</h6>
+                                <!-- Two-Line Title -->
+                                <div class="nx-noc-title-area text-center">
+                                    <h2 class="nx-noc-title-l1 mb-0 o_default_snippet_text">EDUCATION DEPARTMENT</h2>
+                                    <h2 class="nx-noc-title-l2 mb-0 o_default_snippet_text">NOC</h2>
+                                </div>
+
+                                <!-- Inner Green-Bordered Certificate Box -->
+                                <div class="nx-noc-inner-box position-relative mt-4">
+
+                                    <!-- Watermark -->
+                                    <div class="nx-noc-watermark position-absolute d-flex align-items-center justify-content-end pe-5">
+                                        <img src="/nx_industry_housing/static/src/img/default-watermark.png"
+                                             class="img-fluid o_we_custom_image" alt="Watermark"/>
                                     </div>
 
-                                    <p class="nx-noc-verified mb-0 o_default_snippet_text">Verified &amp; Approved</p>
+                                    <!-- Content -->
+                                    <div class="row align-items-stretch position-relative" style="z-index:1;">
+                                        <!-- Left: Logo -->
+                                        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                                            <img src="/nx_industry_housing/static/src/img/default-department-logo.png"
+                                                 class="nx-noc-logo img-fluid o_we_custom_image" alt="Department Logo"/>
+                                        </div>
+                                        <!-- Right: Details -->
+                                        <div class="col-12 col-md-8 d-flex flex-column justify-content-center">
+                                            <h3 class="nx-noc-cert mb-1 o_default_snippet_text">Certificate of No Objection</h3>
+                                            <h4 class="nx-noc-issued mb-3 o_default_snippet_text">Issued to <strong>EECHS KP</strong></h4>
+                                            <div class="nx-noc-divider mb-3"></div>
+                                            <p class="nx-noc-reg mb-3 o_default_snippet_text"><strong>Regulatory Body:</strong> Khyber Pakhtunkhwa Education Department</p>
+
+                                            <!-- NOC Number Box -->
+                                            <div class="nx-noc-numbox p-3 mb-4">
+                                                <h5 class="nx-noc-numbox-label mb-1 o_default_snippet_text">NOC Number:</h5>
+                                                <h6 class="nx-noc-numbox-val mb-0 o_default_snippet_text">SOG/E&amp;SE/1-25/2023/COOP: Housing Society</h6>
+                                            </div>
+
+                                            <p class="nx-noc-verified mb-0 o_default_snippet_text">Verified &amp; Approved</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
