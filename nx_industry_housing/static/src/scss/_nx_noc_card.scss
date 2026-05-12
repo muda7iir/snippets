@@ -1,70 +1,142 @@
-// NOC Card Snippet Styles
+// Premium NOC Card Snippet Styles
 
 .s_nx_noc_card {
-    .nx-noc-card {
-        // Core Variables (Fallbacks in case inline styles are removed)
-        --nx-noc-card-bg: #ffffff;
-        --nx-noc-card-border-color: #1a4231;
-        --nx-noc-card-border-width: 2px;
-        --nx-noc-card-radius: 12px;
-        --nx-noc-card-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        --nx-noc-inner-border-color: #1a4231;
-        --nx-noc-green: #1a4231;
-        --nx-noc-gold: #c5a365;
-        --nx-noc-title-color: #1a4231;
-        --nx-noc-text-color: #333333;
-        --nx-noc-box-bg: #fdfaf2;
-        --nx-noc-box-border: #c5a365;
-        --nx-noc-watermark-opacity: 0.05;
+    background-color: var(--noc-section-bg, #093322);
+    
+    // Add subtle abstract shapes to the background if needed
+    // Assuming simple background for now, could add SVGs or gradients
+    background-image: radial-gradient(circle at top left, rgba(255,255,255,0.03) 0%, transparent 40%),
+                      radial-gradient(circle at bottom right, rgba(255,255,255,0.03) 0%, transparent 40%);
 
-        background-color: var(--nx-noc-card-bg);
-        border: var(--nx-noc-card-border-width) solid var(--nx-noc-card-border-color);
-        border-radius: var(--nx-noc-card-radius);
-        box-shadow: var(--nx-noc-card-shadow);
-        max-width: 520px;
+    .nx-noc-card-container {
         width: 100%;
+        max-width: 960px;
         margin: 0 auto;
         
-        // Ensure parent doesn't cut off the overlapping top badge
-        overflow: visible;
-
-        .nx-noc-inner-box {
-            border: 1px solid var(--nx-noc-inner-border-color);
-            border-radius: calc(var(--nx-noc-card-radius) - 4px);
-            
-            // Adjust for mobile view stacking
-            @media (max-width: 575.98px) {
-                padding: 1.5rem 1rem !important;
-                margin: 0.75rem !important;
+        .nx-noc-badge {
+            width: var(--noc-badge-size, 80px);
+            height: auto;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.25));
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.05);
             }
         }
 
-        .nx-noc-badge-wrapper {
-            .nx-noc-badge {
-                filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
-                transition: transform 0.3s ease;
-                &:hover {
-                    transform: scale(1.05);
+        .nx-noc-main-card {
+            background-color: var(--noc-card-bg, #ffffff);
+            border: var(--noc-card-border-width, 0px) solid var(--noc-card-border-color, #ffffff);
+            border-radius: var(--noc-card-radius, 20px);
+            box-shadow: var(--noc-card-shadow, 0 20px 50px rgba(0,0,0,0.3));
+            padding: 3.5rem 3rem 3rem 3rem;
+
+            @media (max-width: 767.98px) {
+                padding: 3rem 1.5rem 1.5rem 1.5rem;
+            }
+
+            .nx-noc-title-line1, .nx-noc-title-line2 {
+                color: var(--noc-title-color, #093322);
+                font-family: 'Times New Roman', Times, serif; // Or a specific premium serif
+                letter-spacing: 1px;
+                line-height: 1.2;
+            }
+
+            .nx-noc-title-line1 {
+                font-size: 2.2rem;
+                @media (max-width: 767.98px) {
+                    font-size: 1.5rem;
                 }
             }
-        }
 
-        .nx-noc-title {
-            @media (max-width: 575.98px) {
-                font-size: 1.5rem;
+            .nx-noc-title-line2 {
+                font-size: 2.5rem;
+                @media (max-width: 767.98px) {
+                    font-size: 1.8rem;
+                }
             }
-        }
 
-        .nx-noc-subtitle {
-            @media (max-width: 575.98px) {
-                font-size: 1.1rem;
-            }
-        }
+            .nx-noc-inner-box {
+                border: var(--noc-inner-border-width, 2px) solid var(--noc-inner-border-color, #093322);
+                border-radius: var(--noc-inner-radius, 12px);
+                padding: 2rem;
+                
+                @media (max-width: 767.98px) {
+                    padding: 1.5rem 1rem;
+                }
 
-        .nx-noc-number {
-            word-break: break-word;
-            @media (max-width: 575.98px) {
-                font-size: 1.25rem;
+                .nx-noc-logo {
+                    width: 100%;
+                    max-width: var(--noc-logo-size, 180px);
+                    height: auto;
+                }
+
+                .watermark-img {
+                    width: var(--noc-watermark-size, 350px);
+                    height: auto;
+                    filter: grayscale(100%); // Sometimes watermarks are grayscale
+                }
+
+                .nx-noc-cert-text {
+                    color: var(--noc-text-color, #111111);
+                    font-size: 1.6rem;
+                    font-family: inherit; // Can be overridden if needed
+                    @media (max-width: 767.98px) {
+                        font-size: 1.3rem;
+                    }
+                }
+
+                .nx-noc-issued-text {
+                    color: var(--noc-text-color, #111111);
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    @media (max-width: 767.98px) {
+                        font-size: 1.1rem;
+                    }
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+
+                .nx-noc-gold-divider {
+                    width: 60px;
+                    height: 2px;
+                    background-color: var(--noc-divider-color, #c6a461);
+                }
+
+                .nx-noc-regulatory-text {
+                    color: var(--noc-text-color, #111111);
+                    font-size: 1.1rem;
+                    line-height: 1.4;
+                    @media (max-width: 767.98px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                .nx-noc-number-box {
+                    background-color: var(--noc-number-box-bg, #ffffff);
+                    border: 2px solid var(--noc-number-box-border, #c6a461);
+                    box-shadow: var(--noc-number-box-shadow, 0 4px 15px rgba(198, 164, 97, 0.3));
+                    display: inline-block;
+                    width: 100%;
+                    max-width: 450px;
+                    
+                    .nx-noc-number-label {
+                        color: var(--noc-accent-gold, #c6a461);
+                        font-size: 1.4rem;
+                        margin-bottom: 0.2rem;
+                    }
+                    
+                    .nx-noc-number-val {
+                        color: var(--noc-text-color, #111111);
+                        font-size: 1.1rem;
+                        word-break: break-word;
+                    }
+                }
+
+                .nx-noc-footer-text {
+                    color: var(--noc-text-color, #111111);
+                    font-size: 1.1rem;
+                }
             }
         }
     }
