@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'NX Industry Housing Snippets',
-    'version': '1.2.1',
+    'version': '1.3.0',
     'category': 'Website',
     'summary': 'Premium website snippets for housing society websites.',
     'description': """
@@ -26,6 +26,7 @@ Current snippets:
         'views/snippets/nx_process_timeline.xml',
         'views/snippets/nx_access_anywhere.xml',
         'views/snippets/nx_project_locations.xml',
+        'views/snippets/nx_events_meetings.xml',
         'views/snippets/snippets.xml',
     ],
     'assets': {
@@ -36,6 +37,7 @@ Current snippets:
             'nx_industry_housing/static/src/scss/_nx_process_timeline.scss',
             'nx_industry_housing/static/src/scss/_nx_access_anywhere.scss',
             'nx_industry_housing/static/src/scss/_nx_project_locations.scss',
+            'nx_industry_housing/static/src/scss/_nx_events_meetings.scss',
         ],
     },
     'installable': True,

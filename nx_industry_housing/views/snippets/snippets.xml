@@ -32,10 +32,14 @@
         <t t-snippet="nx_industry_housing.s_nx_access_anywhere"
            string="Access EECHS Anywhere"
            t-thumbnail="/nx_industry_housing/static/src/img/phone-mockup.svg"/>
-        <!-- 6. Project Locations -->
+        <!-- 05. Project Locations -->
         <t t-snippet="nx_industry_housing.s_nx_project_locations"
            string="Project Locations"
-           t-thumbnail="/nx_industry_housing/static/src/img/pin-active.svg"/>
+           t-thumbnail="/website/static/src/img/snippets_thumbs/s_map.svg"/>
+        <!-- 06. Events & Meetings -->
+        <t t-snippet="nx_industry_housing.s_nx_events_meetings"
+           string="Events &amp; Meetings"
+           t-thumbnail="/website/static/src/img/snippets_thumbs/s_image_gallery.svg"/>
     </xpath>
 </template>
 

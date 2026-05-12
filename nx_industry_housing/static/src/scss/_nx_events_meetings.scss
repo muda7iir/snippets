@@ -1,0 +1,229 @@
+// =====================================================================
+// Events & Meetings
+// =====================================================================
+
+.s_nx_events_meetings {
+    // ── CSS Variables ──
+    --events-section-bg: #fdfdfd;
+    --events-primary-green: #093322;
+    --events-accent-gold: #c6a461;
+    --events-heading-color: #093322;
+    --events-text-color: #333333;
+    --events-muted-text-color: #777777;
+    --events-underline-color: #c6a461;
+    
+    --events-card-bg: #ffffff;
+    --events-card-border-color: #e8f4f0;
+    --events-card-border-width: 1px;
+    --events-card-radius: 16px;
+    --events-card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --events-card-glow: 0 15px 40px rgba(9, 51, 34, 0.1);
+    
+    --events-date-bg: #f0f7f4;
+    --events-date-color: #093322;
+    
+    --events-featured-bg: #093322;
+    --events-featured-border: #c6a461;
+    
+    --events-button-bg: transparent;
+    --events-button-color: #093322;
+    --events-button-border: #093322;
+    --events-button-hover-bg: #093322;
+    --events-button-hover-color: #ffffff;
+    
+    --events-image-radius: 16px 16px 0 0;
+    --events-section-padding: 80px 0;
+    --events-card-padding: 25px;
+    --events-gap: 30px;
+
+    background-color: var(--events-section-bg);
+    overflow: hidden;
+
+    // ── Headings ──
+    .nx-events-heading-area {
+        position: relative;
+    }
+    
+    .nx-events-heading {
+        color: var(--events-heading-color);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        @media (max-width: 767.98px) { font-size: 2rem; }
+    }
+
+    .nx-events-underline {
+        width: 100px;
+        height: 3px;
+        background-color: var(--events-underline-color);
+        border-radius: 2px;
+        margin-top: 15px;
+    }
+
+    // ── Cards Base ──
+    .nx-event-card {
+        background-color: var(--events-card-bg);
+        border: var(--events-card-border-width) solid var(--events-card-border-color);
+        border-radius: var(--events-card-radius);
+        box-shadow: var(--events-card-shadow);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        display: flex;
+        flex-direction: column;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--events-card-glow);
+            
+            .nx-event-img {
+                transform: scale(1.08);
+            }
+        }
+    }
+
+    .nx-event-img-wrap {
+        border-radius: var(--events-image-radius);
+        overflow: hidden;
+        height: 220px; // Default height for standard cards
+        position: relative;
+        
+        .nx-event-img {
+            transition: transform 0.6s ease;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .nx-event-content {
+        padding: var(--events-card-padding);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nx-event-title {
+        color: var(--events-heading-color);
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .nx-event-desc {
+        color: var(--events-text-color);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        flex-grow: 1;
+    }
+
+    // ── Date Badge ──
+    .nx-date-badge {
+        bottom: -15px;
+        left: 20px;
+        background-color: var(--events-date-bg);
+        color: var(--events-date-color);
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        z-index: 5;
+    }
+
+    .nx-date-gold {
+        background-color: var(--events-accent-gold);
+        color: #fff;
+    }
+
+    // ── Buttons ──
+    .nx-event-btn {
+        background-color: var(--events-button-bg);
+        color: var(--events-button-color) !important;
+        border: 1px solid var(--events-button-border);
+        border-radius: 6px;
+        padding: 8px 20px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+        align-self: flex-start;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background-color: var(--events-button-hover-bg);
+            color: var(--events-button-hover-color) !important;
+            border-color: var(--events-button-hover-bg);
+            transform: scale(1.05);
+        }
+    }
+
+    // ── Featured Card ──
+    .nx-featured-card {
+        border-color: var(--events-accent-gold);
+        border-width: 2px;
+        
+        .nx-featured-banner {
+            background-color: var(--events-featured-bg);
+            color: #fff;
+            border-radius: calc(var(--events-card-radius) - 2px) calc(var(--events-card-radius) - 2px) 0 0;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            padding: 10px;
+        }
+        
+        .nx-event-img-wrap {
+            border-radius: 0; // overrides top radius
+            height: 380px; // Larger height for featured
+            @media (max-width: 991.98px) { height: 280px; }
+        }
+        
+        .nx-event-title {
+            font-size: 1.5rem;
+        }
+        
+        .nx-event-btn {
+            align-self: center;
+            background-color: var(--events-primary-green);
+            color: #fff !important;
+            border-color: var(--events-primary-green);
+            &:hover {
+                background-color: var(--events-accent-gold);
+                border-color: var(--events-accent-gold);
+            }
+        }
+        
+        .nx-date-badge {
+            bottom: auto;
+            top: 20px;
+            right: 20px;
+            left: auto;
+        }
+    }
+
+    // ── Image Only Card ──
+    .nx-image-card {
+        border: none;
+        .nx-event-img-wrap {
+            border-radius: var(--events-card-radius);
+            height: 250px;
+        }
+        .nx-image-card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 0 0 var(--events-card-radius) var(--events-card-radius);
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            pointer-events: none; // let clicks pass to image
+            z-index: 2;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .o_default_snippet_text {
+            pointer-events: auto;
+        }
+    }
+}
