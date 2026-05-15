@@ -36,7 +36,8 @@
                     
                     <!-- Single Showcase Card -->
                     <div class="col-lg-5 col-md-8 col-12 mb-4 nx-loc-card-wrap">
-                        <div class="nx-loc-card h-100 d-flex flex-column position-relative">
+                        <div class="nx-loc-card nx-3d-card h-100 d-flex flex-column position-relative">
+                            <div class="nx-glossy"/>
                             <div class="nx-loc-pin-badge position-absolute" style="pointer-events: none;">
                                 <img src="/nx_industry_housing/static/src/img/pin-active.svg" class="nx-loc-pin-img img-fluid o_we_custom_image" style="width: 65px; pointer-events: auto;" alt="Pin"/>
                             </div>
@@ -51,7 +52,7 @@
                                     <p class="nx-loc-card-desc o_default_snippet_text">Scenic and developing area.</p>
                                 </div>
                                 <div class="mt-3">
-                                    <a href="#" class="btn nx-loc-btn o_default_snippet_text">View Details</a>
+                                    <a href="#" class="btn nx-loc-btn nx-cta o_default_snippet_text">View Details</a>
                                 </div>
                             </div>
                         </div>

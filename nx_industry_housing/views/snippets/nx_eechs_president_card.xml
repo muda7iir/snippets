@@ -9,9 +9,10 @@
 ============================================================= -->
 
 <template id="s_nx_eechs_president_card" name="EECHS President Message Card">
-<section class="s_nx_eechs_president_card o_cc o_cc1 o_colored_level"
+<section class="s_nx_eechs_president_card nx-3d-card o_cc o_cc1 o_colored_level"
          data-snippet="s_nx_eechs_president_card"
          data-name="EECHS President Message Card">
+    <div class="nx-glossy"/>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-12">
@@ -51,7 +52,7 @@
                     <div class="nx-eechs-card__divider"/>
 
                     <!-- ── CTA Button ────────────────────── -->
-                    <a href="#" class="nx-eechs-card__btn">
+                    <a href="#" class="nx-eechs-card__btn nx-cta">
                         READ MESSAGE
                     </a>
 

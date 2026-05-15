@@ -48,7 +48,8 @@
                 <div class="row text-center mt-5">
                     <!-- Left Feature -->
                     <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <div class="nx-access-feature">
+                        <div class="nx-access-feature nx-3d-card p-4">
+                            <div class="nx-glossy"/>
                             <div class="nx-access-icon mb-3">
                                 <img src="/nx_industry_housing/static/src/img/icon-mobile.svg" class="img-fluid o_we_custom_image" alt="Mobile Portal"/>
                             </div>
@@ -59,7 +60,8 @@
 
                     <!-- Center Feature -->
                     <div class="col-12 col-md-4 mb-4 mb-md-0">
-                        <div class="nx-access-feature">
+                        <div class="nx-access-feature nx-3d-card p-4">
+                            <div class="nx-glossy"/>
                             <div class="nx-access-icon mb-3">
                                 <img src="/nx_industry_housing/static/src/img/icon-form.svg" class="img-fluid o_we_custom_image" alt="Easy Forms"/>
                             </div>
@@ -70,7 +72,8 @@
 
                     <!-- Right Feature -->
                     <div class="col-12 col-md-4">
-                        <div class="nx-access-feature">
+                        <div class="nx-access-feature nx-3d-card p-4">
+                            <div class="nx-glossy"/>
                             <div class="nx-access-icon mb-3">
                                 <img src="/nx_industry_housing/static/src/img/icon-tracking.svg" class="img-fluid o_we_custom_image" alt="Real-time Status"/>
                             </div>

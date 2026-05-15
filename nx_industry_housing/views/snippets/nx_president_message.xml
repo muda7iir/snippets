@@ -8,9 +8,10 @@
 ============================================================= -->
 
 <template id="s_nx_president_message" name="President Message Card">
-<section class="s_nx_president_message o_cc o_cc1 o_colored_level"
+<section class="s_nx_president_message nx-3d-card o_cc o_cc1 o_colored_level"
          data-snippet="s_nx_president_message"
          data-name="President Message Card">
+    <div class="nx-glossy"/>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10 col-12">
@@ -51,7 +52,7 @@
                     <div class="nx-president-divider"/>
 
                     <!-- ── CTA Button ────────────────────── -->
-                    <a href="#" class="nx-president-btn">
+                    <a href="#" class="nx-president-btn nx-cta">
                         READ MESSAGE
                     </a>
 

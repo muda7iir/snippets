@@ -31,6 +31,7 @@ Current snippets:
     ],
     'assets': {
         'web.assets_frontend': [
+            'nx_industry_housing/static/src/scss/_nx_3d_cards.scss',
             'nx_industry_housing/static/src/scss/_nx_president_message.scss',
             'nx_industry_housing/static/src/scss/_nx_eechs_president_card.scss',
             'nx_industry_housing/static/src/scss/_nx_noc_card.scss',
